@@ -19,12 +19,18 @@ Para las empresas y empleadores, la web app busca abordar la dificultad para enc
 ## ¿Qué tecnologías se usaron?
 
 ### FRONTEND
-
-
-
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" height="200" alt="React logo" />
+</div>
 
 ### BACKEND
 
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="200" alt="MySQL logo" />
+</div>
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="200" alt="PHP logo" />
+</div>
 
 
 
