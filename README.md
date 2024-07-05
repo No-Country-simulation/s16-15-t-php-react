@@ -36,6 +36,6 @@
 | Participante       | Cargo                    | Contactos                                      |
 |--------------------|--------------------------|------------------------------------------------|
 |                    |                          | 
-|Sofia Hilarion      | Diseñadora UX            | https://www.linkedin.com/in/sofialudmilahilarion/), ludmilahilarion230802@gmacil.com | 
+|Sofia Hilarion      | Diseñadora UX            | https://www.linkedin.com/in/sofialudmilahilarion/, ludmilahilarion230802@gmacil.com | 
 | Lisbeth Mujica     | Desarrollador Backend    | linkedin.com/in/lisbeth-mujica-a21530183, lisbethsofia65@gmail.com |
 | Celina Garcés      | Desarrollador Frontend   | https://www.linkedin.com/in/celina-garc%C3%A9s/, celinagarces199@gmail.com |
