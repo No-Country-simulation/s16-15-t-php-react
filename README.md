@@ -47,5 +47,6 @@ Para las empresas y empleadores, la web app busca abordar la dificultad para enc
 |--------------------|--------------------------|------------------------------------------------|
 |                    |                          | 
 |Sofia Hilarion      | Diseñadora UX            | https://www.linkedin.com/in/sofialudmilahilarion/, ludmilahilarion230802@gmacil.com | 
-| Lisbeth Mujica     | Desarrollador Backend    | linkedin.com/in/lisbeth-mujica-a21530183, lisbethsofia65@gmail.com |
+| Lisbeth Mujica     | Desarrollador Backend    | https://linkedin.com/in/lisbeth-mujica-a21530183, lisbethsofia65@gmail.com |
+| Daniel Canache     | Desarrollador Backend    | [Linkedin](https://www.linkedin.com/in/daniel-canache-vazquez-9113a2147/), [danielcanache7894@gmail.com](mailto:danielcanache7894@gmail.com) |
 | Celina Garcés      | Desarrollador Frontend   | https://www.linkedin.com/in/celina-garc%C3%A9s/, celinagarces199@gmail.com |
