@@ -51,3 +51,4 @@ Para las empresas y empleadores, la web app busca abordar la dificultad para enc
 | Daniel Canache     | Desarrollador Backend    | [Linkedin](https://www.linkedin.com/in/daniel-canache-vazquez-9113a2147/), [danielcanache7894@gmail.com](mailto:danielcanache7894@gmail.com) |
 | Celina Garcés      | Desarrollador Frontend   | https://www.linkedin.com/in/celina-garc%C3%A9s/, celinagarces199@gmail.com |
 | Tadeo Ressio       | Desarrollador Frontend   | https://www.linkedin.com/in/tadeo-ressio-a62a15179/, tadeo.ressio@gmail.com |
+| José Mirabal       | Tester QA                | lazaruz2671981@gmail.com                                                    |
