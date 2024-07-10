@@ -1,0 +1,23 @@
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-text h1{
+  width: 300px;
+  font-size: 40px;
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.col-img{
+  margin-top: 30px;
+}
+
+.col-img img{
+  width: 460px;
+  height: 440px;
+  border-radius: 50%;
+}

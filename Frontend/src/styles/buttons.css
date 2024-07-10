@@ -1,0 +1,15 @@
+
+.btn-bdr{
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 20px;
+    margin: auto 10px;
+}
+
+.btn-bg{
+  background-color: gray;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  color: white;
+}
