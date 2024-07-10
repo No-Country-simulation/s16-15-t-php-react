@@ -1,7 +1,7 @@
 import ButtonBdr from "../components/button/ButtonBdr"
 import ButtonBg from "../components/button/ButtonBg"
 import '../styles/landingPage.css'
-import LandingPageImg from '../assets/working.webp'
+import LandingPageImgMain from '../assets/landing-img-main.svg'
 
 const LandingPage = () => {
   return (
@@ -13,7 +13,7 @@ const LandingPage = () => {
           <ButtonBdr text="Quiero ser freelance" />
           </div>
         <div className="col-img">
-        <img src={LandingPageImg} alt="" />
+        <img src={LandingPageImgMain} alt="" />
         </div>
       </section>
       </main>
