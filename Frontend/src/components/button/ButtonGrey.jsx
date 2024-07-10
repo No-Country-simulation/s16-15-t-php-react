@@ -3,14 +3,13 @@ import PropTypes from 'prop-types'
 import '../../styles/buttons.css'
 import { Link } from 'react-router-dom'
 
-const ButtonGrey = ({to, text}) => {
+const ButtonGrey = ({to, text, img}) => {
   return (
     <button className='btn-gry'>
-      <a to={to} className='link'>{text}</a>
+        <img src={img}></img>
+      <Link to={to}>{text}</Link>
     </button>
   )
 }
 
 export default ButtonGrey
-
-//Aquí se utiliza un a cuando debería ser Link pero es para cambiar el color de la fuente. No pudimos indicar Link en css

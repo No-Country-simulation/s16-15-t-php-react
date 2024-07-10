@@ -16,6 +16,8 @@
 }
 
 .btn-gry{
+  display: flex;
+  justify-content:center;
   background-color: #E8E8E8;
   border: none;
   border-radius: 20px;
@@ -25,4 +27,16 @@
 
 .btn-gry a {
   color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-gry {
+  display: flex;
+}
+
+.btn-gry img {
+  width: 25px;
+  height: 25px;
+  margin-right: 3%;
 }
