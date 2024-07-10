@@ -14,3 +14,15 @@
   padding: 7px;
   color: white;
 }
+
+.btn-gry{
+  background-color: #E8E8E8;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  color: white;
+}
+
+.btn-gry a {
+  color: #000000;
+}

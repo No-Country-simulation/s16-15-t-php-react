@@ -1,0 +1,20 @@
+form {
+    display: flex;
+    align-content: center;
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    margin: 10%;
+}
+
+input {
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    padding: 25%;
+}
+
+/* No estoy pudiendo indicar el color del placeholder sin usar id */
+.inp-plc::placeholder {
+    color: #8CABFB;
+    padding: 5%;
+}
+
