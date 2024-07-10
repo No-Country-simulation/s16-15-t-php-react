@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const ButtonBdr = ({ to, text }) => {
   return (
     <button className='btn-bdr'>
-      <Link to={to}>{text}</Link>
+      <Link to={to} className='link'>{text}</Link>
     </button>
   )
 }

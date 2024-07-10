@@ -8,8 +8,8 @@ function Navbar() {
     <nav>
       <Link>SkillMatch</Link>
       <div className="nav-links">
-        <Link>Sobre Nosotros</Link>
-        <Link>Preguntas Frecuentes</Link>
+        <Link className='link'>Sobre Nosotros</Link>
+        <Link className='link'>Preguntas Frecuentes</Link>
         <ButtonBdr text="Ingresa" />
         <ButtonBg text="Registrate" />
       </div>
