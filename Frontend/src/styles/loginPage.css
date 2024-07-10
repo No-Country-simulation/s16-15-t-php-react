@@ -45,7 +45,8 @@ div input {
 
 .inp {
     margin-top: 5%;
-    padding-left: 5%
+    padding-left: 5%;
+    color: #8CABFB;
 }
 
 /* No estoy pudiendo indicar el color del placeholder sin usar id */
