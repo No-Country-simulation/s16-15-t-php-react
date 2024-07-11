@@ -4,9 +4,11 @@ import IconEyeOpen from '../../assets/IconEyeOpen.svg';
 import IconEyeClosed from '../../assets/IconEyeClosed.svg';
 
 const InputPass = ({ onChange }) => {
+
     const handleChange = (e) => {
         onChange(e.target.value);
     };
+    
     const [showPassword, setShowPassword] = useState(false);
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);

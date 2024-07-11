@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/inputs.css'
 
-const InputEmail = ({ onChange }) => {
+const InputEmail = ({ onChange}) => {
 
     const handleChange = (e) => {
         onChange(e.target.value);
@@ -11,7 +11,7 @@ const InputEmail = ({ onChange }) => {
     <input 
         id="inp-Email" 
         className="inp" 
-        type="text" 
+        type="text"
         placeholder="Email"
         onChange={handleChange}>
     </input>
