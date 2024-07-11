@@ -1,0 +1,66 @@
+form {
+    margin: auto;
+    margin-top: 10%;
+    height: 430px;
+    width: 40%;
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    padding-top: 2%;
+    padding-bottom: 1%
+}
+
+#linkID.link {
+    text-decoration: underline;
+    margin-top: 54px;
+}
+
+form button {
+    margin-top: 5%;
+    width: 95%;
+}
+
+/* Quiero borrar este div pero no puedo indicar css de los componentes botones grises. Además se repiten las indicaciones de arriba */
+#div-but button {
+    width: 95%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* Quiero eliminar este div pero tengo problemas para indicar el margin */
+#div-inp {
+    margin-top: 10%;
+}
+
+#div-inp div {
+    margin-top: 5%;
+}
+
+.div-log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+.div-log button {
+    width: 30%;
+    margin: 0;
+}
+
+label {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    /* outline: 2px solid #8CABFB; */
+    border: none;
+    border-radius: 5px; 
+    margin-right: 10px; 
+    accent-color: #8CABFB;
+}
+
+input[type="checkbox"]:hover, span:hover {
+    cursor: pointer;
+}
