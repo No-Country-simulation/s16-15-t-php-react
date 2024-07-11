@@ -9,6 +9,7 @@ import LogoGoogle from '../assets/LogoGoogle.svg';
 import LogoFacebook from '../assets/LogoFacebook.svg';
 
 const LoginPage = () => {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -16,7 +17,7 @@ const LoginPage = () => {
         setEmail(value);
         console.log('Email actualizado:', value);
     };
-
+    
     const handlePasswordChange = (value) => {
         setPassword(value);
         console.log('Password actualizado:', value);
