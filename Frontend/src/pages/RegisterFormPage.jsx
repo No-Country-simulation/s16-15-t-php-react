@@ -12,7 +12,7 @@ const RegisterFormPage = () => {
     };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form-1"onSubmit={handleSubmit}>
         <Link id="linkID" className="link" to="/login">
             ¿Ya tienes cuenta? Ingresa aquí
         </Link>

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/inputs.css'
 
-const InputEmail = ({ onChange}) => {
+const InputText = ({ onChange, type}) => {
 
     const handleChange = (e) => {
         onChange(e.target.value);
@@ -11,11 +11,11 @@ const InputEmail = ({ onChange}) => {
     <input 
         id="inp-Email" 
         className="inp" 
-        type="text"
+        type={type}
         placeholder="Email"
         onChange={handleChange}>
     </input>
   )
 }
 
-export default InputEmail
+export default InputText
