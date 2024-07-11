@@ -1,23 +1,71 @@
-section{
+.white-section{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 95vh;
 }
 
 .col-text h1{
   width: 300px;
   font-size: 40px;
   text-align: left;
-  font-weight: 700;
   padding-bottom: 30px;
 }
 
 .col-img{
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.col-img img{
-  width: 460px;
-  height: 440px;
-  border-radius: 50%;
+.blue-section{
+  background-color: #405ACF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #F8FAFF;
+  font-size: 15px;
+  padding-top: 10%;
+}
+
+.col-text-white{
+  width: 637px;
+  line-height: 25px;
+  padding: 10px;
+}
+
+.col-text-white h2, p {
+  padding-bottom: 30px;
+}
+
+.col-text-white h3{
+  padding-bottom: 20px;
+}
+
+.FAQs-section{
+  padding: 30px;
+}
+
+.FAQs-section h2{
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+p{
+  font-size: 15px;
+}
+
+.question{
+  text-align: left;
+  padding: 5px; 
+  /* padding: 10px 0; */
+}
+
+.question p{
+  margin: 0;
+}
+
+hr {
+  width: 100%; 
+  border-top: 1px solid #E8E8E8;
+  margin: 10px 0; 
 }
