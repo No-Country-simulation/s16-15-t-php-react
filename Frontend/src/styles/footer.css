@@ -1,3 +1,27 @@
 footer{
-    background-color: #405ACF; 
+  background-color: #405ACF; 
+  height: 330px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+li{
+  padding-bottom: 15px;
+}
+
+h3{
+  padding-bottom: 15px;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media img{
+  width: 45px;
+  height: 46px;
 }
