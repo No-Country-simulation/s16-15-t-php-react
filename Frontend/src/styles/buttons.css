@@ -16,6 +16,7 @@
 }
 
 .btn-gry{
+  width: 300px;
   display: flex;
   justify-content:center;
   background-color: #E8E8E8;
@@ -29,14 +30,10 @@
   color: #000000;
   font-weight: 500;
   font-size: 18px;
-}
-
-.btn-gry {
-  display: flex;
+  width: 220px
 }
 
 .btn-gry img {
-  width: 25px;
+  width: 35px;
   height: 25px;
-  margin-right: 3%;
-}
+ }
