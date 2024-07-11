@@ -6,7 +6,7 @@ const ButtonBg = ({to, text}) => {
 
   return (
     <button className='btn-bg'>
-      <Link to={to}>{text}</Link>
+      <Link to={to} className='link'>{text}</Link>
     </button>
   )
 }
