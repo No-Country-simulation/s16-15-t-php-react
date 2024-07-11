@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ButtonGrey from '../components/button/ButtonGrey';
 import ButtonBg from '../components/button/ButtonBg';
-import InputPass from '../components/input/InputPass';
 import InputText from '../components/input/InputText';
+import InputPass from '../components/input/InputPass';
 import '../styles/loginPage.css';
 import LogoGoogle from '../assets/LogoGoogle.svg';
 import LogoFacebook from '../assets/LogoFacebook.svg';
@@ -28,7 +28,7 @@ const LoginPage = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="frm-main" onSubmit={handleSubmit}>
             <Link id="linkID" className="link" to="/registerForm">
                 ¿No tienes una cuenta? Regístrate
             </Link>
@@ -37,7 +37,7 @@ const LoginPage = () => {
                 <ButtonGrey id="btn-st" to="/facebook" img={LogoFacebook} text="Continuar con Facebook" />
             </div>
             <div id="div-inp">
-                <InputText type="email" onChange={handleEmailChange} />
+                <InputText className="inp-text" type="email" placeholder="Email" onChange={handleEmailChange} />
                 <InputPass onChange={handlePasswordChange} />
             </div>
 

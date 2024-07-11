@@ -1,14 +1,23 @@
-form {
+.frm-1 {
     margin: auto;
-    margin-top: 10%;
-    height: 430px;
-    width: 40%;
+    margin-top: 67px;
+    height: 580px;
+    width: 30%;
     border: 1px solid #8CABFB;
     border-radius: 12px;
     padding-top: 2%;
     padding-bottom: 1%
 }
 
-.form-1 {
-    height: 480px;
+.inp-name {
+    width: 20px;
+}
+
+#div-name {
+    display: flex;
+    margin-top: 5%;
+}
+
+#div-name input {
+    width: 40%;
 }

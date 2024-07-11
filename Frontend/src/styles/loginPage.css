@@ -1,8 +1,8 @@
-form {
+.frm-main {
     margin: auto;
-    margin-top: 10%;
+    margin-top: 67px;
     height: 430px;
-    width: 40%;
+    width: 30%;
     border: 1px solid #8CABFB;
     border-radius: 12px;
     padding-top: 2%;
@@ -10,8 +10,9 @@ form {
 }
 
 #linkID.link {
+    display: flex;
+    justify-content: center;
     text-decoration: underline;
-    margin-top: 54px;
 }
 
 form button {
@@ -26,11 +27,18 @@ form button {
     margin-top: 5%;
 }
 
+
 /* Quiero eliminar este div pero tengo problemas para indicar el margin */
 #div-inp {
     margin-top: 10%;
 }
 
+/* No sé porqué esto solo afecta al inputText */
+#div-inp input {
+    display: flex;
+}
+
+/* No entiendo esta indicación pero funcoina */
 #div-inp div {
     margin-top: 5%;
 }
