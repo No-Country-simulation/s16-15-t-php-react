@@ -38,7 +38,7 @@ const LoginPage = () => {
             </div>
             <div id="div-inp">
                 <InputText className="inp-text" type="email" placeholder="Email" onChange={handleEmailChange} />
-                <InputPass onChange={handlePasswordChange} />
+                <InputPass placeholder="Contraseña" onChange={handlePasswordChange} />
             </div>
 
             <div className="div-log">
