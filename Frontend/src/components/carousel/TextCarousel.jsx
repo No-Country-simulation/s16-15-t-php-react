@@ -44,7 +44,6 @@ const TextCarousel = () => {
           ></span>
         ))}
       </div>
-      
     </div>
   )
 }

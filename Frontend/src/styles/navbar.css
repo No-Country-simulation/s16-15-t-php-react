@@ -3,8 +3,19 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 20px
 }
 
 .nav-links a{
   padding: 20px;
 }
+
+.search-input{
+  width: 268px;
+  height: 35px;
+  padding: 10px 40px 10px 20px;
+  border: 2px solid #405ACF;
+  border-radius: 20px;
+  outline: none;
+}
+
