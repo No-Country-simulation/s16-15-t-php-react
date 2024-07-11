@@ -1,22 +1,38 @@
-#main {
-    display: flex;
-    justify-content: center;  
-}
-
 form {
-    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    height: 430px;
     width: 40%;
-    margin: 10%;
     border: 1px solid #8CABFB;
     border-radius: 12px;
+    padding-top: 2%;
+    padding-bottom: 1%
 }
 
-#div-but {
-    width: 100%;
+#linkID.link {
+    text-decoration: underline;
+    margin-top: 54px;
 }
 
+form button {
+    margin-top: 5%;
+    width: 95%;
+}
+
+/* Quiero borrar este div pero no puedo indicar css de los componentes botones grises. Además se repiten las indicaciones de arriba */
 #div-but button {
     width: 95%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* Quiero eliminar este div pero tengo problemas para indicar el margin */
+#div-inp {
+    margin-top: 10%;
+}
+
+#div-inp div {
+    margin-top: 5%;
 }
 
 .div-log {
@@ -28,50 +44,14 @@ form {
 
 .div-log button {
     width: 30%;
-    
-}
-
-#div-inp {
-    margin-top: 5%;
-}
-
-div input {
-    width: 95%;
-    height: 9%;
-    padding: 10px;
-    border: 1px solid #8CABFB;
-    border-radius: 25px;
-}
-
-.inp {
-    margin-top: 5%;
-    padding-left: 5%;
-    color: #8CABFB;
-}
-
-/* No estoy pudiendo indicar el color del placeholder sin usar id */
-.inp::placeholder {
-    color: #8CABFB;
-}
-
-form button {
-    margin-top: 5%;
-    width: 95%;
-}
-
-.div-log button {
     margin: 0;
-}
-
-#linkID {
-    text-decoration: underline;
 }
 
 label {
     display: flex;
 }
 
-.div-log input[type="checkbox"] {
+input[type="checkbox"] {
     height: 25px;
     width: 25px;
     /* outline: 2px solid #8CABFB; */

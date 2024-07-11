@@ -1,0 +1,35 @@
+#inp-pass-div {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 5%;
+    color: #8CABFB;
+    margin: auto;
+}
+
+input {
+    width: 90%;
+    outline: none;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#inp-Email {
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 5%;
+    color: #8CABFB;
+    margin: auto;
+}
+
+/* No estoy pudiendo indicar el color del placeholder sin usar id */
+.inp::placeholder {
+    color: #8CABFB;
+}
