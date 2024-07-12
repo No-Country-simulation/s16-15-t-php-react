@@ -36,4 +36,5 @@ const InputPass = ({ onChange, placeholder }) => {
     );
 };
 
+
 export default InputPass;

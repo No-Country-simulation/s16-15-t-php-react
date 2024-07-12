@@ -5,7 +5,7 @@ const InputSearch = () => {
   return (
     <div className={styles.searchInput}>
       <input type="search" placeholder="Buscar talento..." />
-      <button className="search-button">
+      <button>
         <img src={lupa} alt="" />
       </button> 
     </div>

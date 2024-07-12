@@ -6,6 +6,11 @@ nav{
   padding: 20px
 }
 
+.logoLink{
+  margin-right: auto;
+  padding-left: 15px;
+}
+
 .navLinks a{
   padding: 20px;
 }
