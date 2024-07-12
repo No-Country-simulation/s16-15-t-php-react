@@ -1,3 +1,4 @@
+/* white section */
 .whiteSection{
   display: flex;
   align-items: center;
@@ -16,6 +17,8 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+/* blue section */
 
 .blueSection{
   background-color: #405ACF;
@@ -41,6 +44,14 @@
   padding-bottom: 20px;
 }
 
+.colImgBlue{
+  max-width: 467px;
+  max-height: 494px;
+  padding: 20px 0 0 0;
+}
+
+/* FAQs section */
+
 .FAQsSection{
   padding: 30px;
 }
@@ -57,7 +68,6 @@ p{
 .question{
   text-align: left;
   padding: 5px; 
-  /* padding: 10px 0; */
 }
 
 .question p{
