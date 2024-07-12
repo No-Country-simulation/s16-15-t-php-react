@@ -32,39 +32,15 @@ const LandingPage = () => {
           </section>
           <section className={styles.FAQsSection}>
             <h2>Preguntas Frecuentes</h2>
-            <div className={styles.question}>
-              <p>¿Cómo puedo registrarme en SkillMatch?</p>
-              <hr />
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Qué sucede si tengo un conflicto con un cliente?</p>
-              <hr />
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Cómo puedo publicar un proyecto?</p>
-              <hr />
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?</p>
-              <hr />  
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Cómo selecciono al freelancer adecuado para mi proyecto?</p>
-              <hr />  
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2</p>
-              <hr />
-            </div>
-
-            <div className={styles.question}>
-              <p>¿Cómo selecciono al freelancer adecuado para mi proyecto? X2</p>
-            </div>  
+            <ul className={styles.questionsList}>
+              <li>¿Cómo puedo registrarme en SkillMatch?</li>
+              <li>¿Qué sucede si tengo un conflicto con un cliente?</li>
+              <li>¿Cómo puedo publicar un proyecto?</li>
+              <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?</li>
+              <li>¿Cómo selecciono al freelancer adecuado para mi proyecto?</li>
+              <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2</li>
+              <li>¿Cómo selecciono al freelancer adecuado para mi proyecto? X2</li>
+            </ul>
           </section>
         </main>
         <Footer />

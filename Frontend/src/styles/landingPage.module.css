@@ -58,24 +58,20 @@
 
 .FAQsSection h2{
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
-p{
-  font-size: 15px;
+.questionsList{
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
-.question{
-  text-align: left;
-  padding: 5px; 
+.questionsList li {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 0;
 }
 
-.question p{
-  margin: 0;
-}
-
-hr {
-  width: 100%; 
-  border-top: 1px solid #E8E8E8;
-  margin: 10px 0; 
+.questionsList li:last-child {
+  border-bottom: none;
 }
