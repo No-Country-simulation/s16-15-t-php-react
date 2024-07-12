@@ -9,15 +9,24 @@
     padding-bottom: 1%
 }
 
-.inp-name {
-    width: 20px;
-}
-
 #div-name {
     display: flex;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 #div-name input {
-    width: 40%;
+    width: 45%;
+}
+
+#div-pass {
+    margin-top: 4%;
+}
+
+#div-pass div {
+    margin-bottom: 4%;
+}
+
+#div-input1 {
+    display: flex;
+    margin-bottom: 4%;
 }
