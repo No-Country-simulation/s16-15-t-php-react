@@ -1,4 +1,4 @@
-import '../../styles/footer.css'
+import styles from'../../styles/footer.module.css'
 import logo from '../../assets/logo-white.svg'
 import instagram from '../../assets/instagram.svg'
 import facebook from '../../assets/facebook.svg'
@@ -25,7 +25,7 @@ const Footer = () => {
           <li>Política de privacidad</li>
         </ul>
           <h3>Seguinos en nuestras redes</h3>
-          <div className='social-media'>
+          <div className={styles.socialMedia}>
             <img src={instagram} alt="instagram logo" />
             <img src={facebook} alt="facebook logo" />
             <img src={x} alt="x logo" />

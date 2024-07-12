@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '../../styles/textCarousel.css'
+import styles from '../../styles/textCarousel.module.css'
 
 const TextCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,15 +31,15 @@ const TextCarousel = () => {
 
   return (
     <div className="carousel-container">
-      <div className="carousel-slide">
+      <div className={styles.carouselSlide}>
         <h3>{slides[currentIndex].title}</h3>
         {slides[currentIndex].content}
       </div>
-      <div className="carousel-dots">
+      <div className={styles.carouselDots}>
         {slides.map((slide, index) => (
           <span 
             key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            className={`${styles.dot} ${index === currentIndex ? styles.active : ''}`}
             onClick={() => handleDotClick(index)}
           ></span>
         ))}
