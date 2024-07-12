@@ -1,9 +1,9 @@
 import lupa from '../../assets/icono-busqueda.svg'
-import '../../styles/inputSearch.css'
+import styles from '../../styles/inputSearch.module.css'
 
 const InputSearch = () => {
   return (
-    <div className="search-input">
+    <div className={styles.searchInput}>
       <input type="search" placeholder="Buscar talento..." />
       <button className="search-button">
         <img src={lupa} alt="" />
