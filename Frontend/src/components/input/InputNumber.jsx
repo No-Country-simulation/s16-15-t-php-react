@@ -13,7 +13,7 @@ const InputNumber = ({ onPhoneNumberChange, placeholder }) => {
   };
 
   return (
-    <div>
+    <div id="div-inp-tel">
       <IntlTelInput
         onPhoneNumberChange={handlePhoneChange}
         preferredCountries={['ar', 've']}

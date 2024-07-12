@@ -10,6 +10,7 @@ import InputPass from '../components/input/InputPass';
 import InputNumber from '../components/input/InputNumber';
 
 const RegisterFormPage = () => {
+
   const [name, setName] = useState('');
   const [lastName, setLastName] = useState('');
   const [password, setPassword] = useState('');
@@ -21,27 +22,22 @@ const RegisterFormPage = () => {
     setName(value);
     console.log('Nombre actualizado:', value);
   };
-
   const handleLastNameChange = (value) => {
     setLastName(value);
     console.log('Apellido actualizado:', value);
-  };    
-
+  };
   const handlePasswordChange = (value) => {
     setPassword(value);
     console.log('Password actualizado:', value);
   };
-
   const handlePassword2Change = (value) => {
     setPassword2(value);
     console.log('Password2 actualizado:', value);
   };
-
   const handleEmailChange = (value) => {
     setEmail(value);
     console.log('Email actualizado:', value);
   };
-
   const handlePhoneChange = (isValid, value, countryData) => {
     setNumber(value);
     console.log('Número:', value);
@@ -80,9 +76,9 @@ const RegisterFormPage = () => {
         <InputPass id="inp-pass" placeholder="Repita contraseña" onChange={handlePassword2Change} />
       </div>
       <div id="div-input1">
-        <InputText id="mail" type="email" placeholder="Email" onChange={handleEmailChange} />
+        <InputText type="email" placeholder="Email" onChange={handleEmailChange} />
       </div>
-      <div id="div-input2">
+      <div>
         <InputNumber placeholder="Teléfono" onPhoneNumberChange={handlePhoneChange} />
       </div>
       <div className="div-log">
