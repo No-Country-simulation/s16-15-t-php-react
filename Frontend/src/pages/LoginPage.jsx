@@ -17,12 +17,10 @@ const LoginPage = () => {
         setEmail(value);
         console.log('Email actualizado:', value);
     };
-    
     const handlePasswordChange = (value) => {
         setPassword(value);
         console.log('Password actualizado:', value);
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
     };
