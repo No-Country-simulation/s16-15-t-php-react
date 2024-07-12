@@ -18,44 +18,16 @@ const RegisterFormPage = () => {
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
 
-  const handleNameChange = (value) => {
-    setName(value);
-    console.log('Nombre actualizado:', value);
-  };
-  const handleLastNameChange = (value) => {
-    setLastName(value);
-    console.log('Apellido actualizado:', value);
-  };
-  const handlePasswordChange = (value) => {
-    setPassword(value);
-    console.log('Password actualizado:', value);
-  };
-  const handlePassword2Change = (value) => {
-    setPassword2(value);
-    console.log('Password2 actualizado:', value);
-  };
-  const handleEmailChange = (value) => {
-    setEmail(value);
-    console.log('Email actualizado:', value);
-  };
-  const handlePhoneChange = (isValid, value, countryData) => {
-    setNumber(value);
-    console.log('Número:', value);
-    console.log('Es válido:', isValid);
-    console.log('Datos del país:', countryData);
-  };
+  const handleNameChange = (value) => { setName(value); };
+  const handleLastNameChange = (value) => { setLastName(value); };
+  const handlePasswordChange = (value) => { setPassword(value); };  
+  const handlePassword2Change = (value) => { setPassword2(value); };  
+  const handleEmailChange = (value) => { setEmail(value); };  
+  const handlePhoneChange = (isValid, value) => { setNumber(value); console.log("telefono: ", value)};
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = {
-      name,
-      lastName,
-      password,
-      password2,
-      email,
-      number,
-    };
-    console.log('Datos del formulario:', formData);
+    console.log("prueba")
   };
 
   return (
