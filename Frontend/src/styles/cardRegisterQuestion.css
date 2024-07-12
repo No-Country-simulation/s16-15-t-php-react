@@ -1,0 +1,46 @@
+#div-card {
+    display: flex;
+}
+
+#div-card span {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 2%
+}
+
+#div-card1, #div-card2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 150px;
+    width: 380px;
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    padding: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#div-card1:hover, #div-card2:hover {
+    cursor: pointer
+}
+
+#div-card img {
+    height: 105px;
+    width: 105px;
+}
+
+.div-radio {
+    height: 100%;
+    align-items: start;
+    align-content: start;
+}
+
+.div-radio input {
+    height: 20px;
+    width: 20px;
+}
+
+.div-radio input {
+    cursor: pointer;
+}

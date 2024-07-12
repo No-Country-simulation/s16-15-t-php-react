@@ -3,12 +3,12 @@ import '../../styles/inputs.css';
 import IconEyeOpen from '../../assets/IconEyeOpen.svg';
 import IconEyeClosed from '../../assets/IconEyeClosed.svg';
 
-const InputPass = ({ onChange }) => {
+const InputPass = ({ onChange, placeholder }) => {
 
     const handleChange = (e) => {
         onChange(e.target.value);
     };
-    
+
     const [showPassword, setShowPassword] = useState(false);
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -21,7 +21,7 @@ const InputPass = ({ onChange }) => {
                 id="inp-pass"
                 className="inp"
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Contraseña"
+                placeholder={placeholder}
                 minLength={12} 
                 maxLength={24} 
                 onChange={handleChange}

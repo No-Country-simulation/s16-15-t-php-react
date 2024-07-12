@@ -10,6 +10,10 @@
     margin: auto;
 }
 
+#inp-pass:focus {
+    outline: none;
+}
+
 input {
     width: 90%;    
 }
@@ -18,7 +22,7 @@ img:hover {
     cursor: pointer;
 }
 
-#inp-Email {
+#inp-text {
     width: 95%;
     border: 1px solid #8CABFB;
     border-radius: 25px;
@@ -31,4 +35,30 @@ img:hover {
 /* No estoy pudiendo indicar el color del placeholder sin usar id */
 .inp::placeholder {
     color: #8CABFB;
+}
+
+.intl-tel-input {
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    color: #8CABFB;
+    margin: auto;
+}
+
+.intl-tel-input input:focus {
+    outline: 0;
+}
+
+.intl-tel-input input:hover {
+    background-color: transparent;
+}
+
+.intl-tel-input input::placeholder {
+    color: #8CABFB;
+}
+
+#div-inp-tel  {
+    width: 100%;
+    display: flex;
 }

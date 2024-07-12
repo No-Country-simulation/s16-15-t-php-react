@@ -1,0 +1,39 @@
+/* Uso id porque si usara main chocaría con, por ej, landingPage */
+#tag-main {
+    margin-top: 7%;
+}
+
+#tag-main h2 {
+    font-weight: 500;
+    width: 100%;
+}
+
+#div-title {
+    display: flex;
+    text-align: center;
+}
+
+#div-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#div-but-log {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#div-but-log a {
+    font-size: 18px;
+}
+#div-but-log button {
+    font-size: 18px;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#tag-main a {
+    margin-top: 4%;
+}
