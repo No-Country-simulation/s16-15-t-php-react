@@ -1,23 +1,25 @@
 import ButtonBdr from "../button/ButtonBdr"
 import ButtonBg from "../button/ButtonBg"
 import styles from'../../styles/navbar.module.css'
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import logo from '../../assets/logo.svg'
 import InputSearch from "../input/InputSearch"
 
 
 function Navbar() {
+  const location = useLocation();
+
   return (
     <nav>
-      <Link>
+      <Link className={styles.logoLink} to='/'>
         <img src={logo} alt="SkillMatch logo" />
       </Link>
-      <InputSearch />
+      {location.pathname === '/' && <InputSearch />}
       <div className={styles.navLinks}>
-        <Link className='link'>Sobre Nosotros</Link>
-        <Link className='link'>Preguntas Frecuentes</Link>
-        <ButtonBdr text="Ingresa" />
-        <ButtonBg text="Registrate" />
+        {location.pathname === '/' && <Link className='link'>Sobre Nosotros</Link>}
+        {location.pathname === '/' && <Link className='link'>Preguntas Frecuentes</Link>}
+        {location.pathname === '/' && <ButtonBdr text="Ingresa" />}
+        {location.pathname === '/' && <ButtonBg text="Registrate" />}
       </div>
     </nav>
   )
