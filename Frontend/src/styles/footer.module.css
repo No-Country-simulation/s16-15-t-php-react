@@ -15,13 +15,13 @@ h3{
   padding-bottom: 15px;
 }
 
-.social-media{
+.socialMedia{
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.social-media img{
+.socialMedia img{
   width: 45px;
   height: 46px;
 }

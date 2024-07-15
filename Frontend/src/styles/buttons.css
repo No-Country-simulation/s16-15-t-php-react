@@ -14,3 +14,26 @@
   padding: 7px;
   color: white;
 }
+
+.btn-gry{
+  width: 300px;
+  display: flex;
+  justify-content:center;
+  background-color: #E8E8E8;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  color: white;
+}
+
+.btn-gry a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  width: 220px
+}
+
+.btn-gry img {
+  width: 35px;
+  height: 25px;
+ }

@@ -1,27 +1,25 @@
 import ButtonBdr from "../button/ButtonBdr"
 import ButtonBg from "../button/ButtonBg"
-import '../../styles/navbar.css'
-import { Link } from "react-router-dom"
+import styles from'../../styles/navbar.module.css'
+import { Link, useLocation } from "react-router-dom"
 import logo from '../../assets/logo.svg'
-// import lupa from '../../assets/icono-busqueda.svg'
+import InputSearch from "../input/InputSearch"
+
 
 function Navbar() {
+  const location = useLocation();
+
   return (
     <nav>
-      <Link>
+      <Link className={styles.logoLink} to='/'>
         <img src={logo} alt="SkillMatch logo" />
       </Link>
-      <div>
-        <input type="search" placeholder="Buscar talento..." className="search-input" />
-        {/* <button className="search-button">
-          <img src={lupa} alt="" />
-        </button> */}
-      </div>
-      <div className="nav-links">
-        <Link className='link'>Sobre Nosotros</Link>
-        <Link className='link'>Preguntas Frecuentes</Link>
-        <ButtonBdr text="Ingresa" />
-        <ButtonBg text="Registrate" />
+      {location.pathname === '/' && <InputSearch />}
+      <div className={styles.navLinks}>
+        {location.pathname === '/' && <Link className='link'>Sobre Nosotros</Link>}
+        {location.pathname === '/' && <Link className='link'>Preguntas Frecuentes</Link>}
+        {location.pathname === '/' && <ButtonBdr text="Ingresa" />}
+        {location.pathname === '/' && <ButtonBg text="Registrate" />}
       </div>
     </nav>
   )

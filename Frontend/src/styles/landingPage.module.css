@@ -1,0 +1,78 @@
+/* white section */
+
+.whiteSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 95vh;
+}
+
+.colText h1{
+  width: 300px;
+  font-size: 40px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.colImg{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* blue section */
+
+.blueSection{
+  background-color: #405ACF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #F8FAFF;
+  font-size: 15px;
+  padding-top: 10%;
+}
+
+.colTextWhite{
+  width: 637px;
+  line-height: 25px;
+  padding: 10px;
+}
+
+.colTextWhite h2, p {
+  padding-bottom: 30px;
+}
+
+.colTextWhite h3{
+  padding-bottom: 20px;
+}
+
+.colImgBlue{
+  max-width: 467px;
+  max-height: 494px;
+  padding: 20px 0 0 0;
+}
+
+/* FAQs section */
+
+.FAQsSection{
+  padding: 30px;
+}
+
+.FAQsSection h2{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.questionsList{
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.questionsList li {
+  border-bottom: 1px solid #E8E8E8;
+  padding: 15px 0;
+}
+
+.questionsList li:last-child {
+  border-bottom: none;
+}
