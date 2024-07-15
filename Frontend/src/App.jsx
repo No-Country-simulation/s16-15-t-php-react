@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage';
 import RegisterFormPage from './pages/RegisterFormPage';
 import FirstQuestionRegisterPage from './pages/FirstQuestionRegisterPage';
+import BrowserPage from './pages/BrowserPage';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/registerForm' element={<RegisterFormPage />} />
           <Route path='/firstQuestionregister' element={<FirstQuestionRegisterPage />} />
+          <Route path='/browser' element={<BrowserPage />} />
         </Routes>
       </div>
     </Router>
