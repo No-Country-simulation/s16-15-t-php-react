@@ -5,6 +5,7 @@ import LandingPageImgMain from '../assets/landing-img-main.svg'
 import LandingPageImgBlue from '../assets/img-landing-blue.svg'
 import Footer from "../components/footer/Footer"
 import TextCarousel from "../components/carousel/TextCarousel"
+import AccordionItemFAQs from "../components/accordion/AccordionItemFAQs"
 
 const LandingPage = () => {
   return (
@@ -33,13 +34,20 @@ const LandingPage = () => {
           <section className={styles.FAQsSection}>
             <h2>Preguntas Frecuentes</h2>
             <ul className={styles.questionsList}>
-              <li>¿Cómo puedo registrarme en SkillMatch?</li>
-              <li>¿Qué sucede si tengo un conflicto con un cliente?</li>
-              <li>¿Cómo puedo publicar un proyecto?</li>
-              <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?</li>
-              <li>¿Cómo selecciono al freelancer adecuado para mi proyecto?</li>
-              <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2</li>
-              <li>¿Cómo selecciono al freelancer adecuado para mi proyecto? X2</li>
+              <AccordionItemFAQs question="¿Cómo puedo registrarme en SkillMatch?"/>
+              {/* <li>¿Cómo puedo registrarme en SkillMatch?</li> */}
+              <AccordionItemFAQs question="¿Qué sucede si tengo un conflicto con un cliente?" />
+              {/* <li>¿Qué sucede si tengo un conflicto con un cliente?</li> */}
+              <AccordionItemFAQs question="¿Cómo puedo publicar un proyecto?" />
+              {/* <li>¿Cómo puedo publicar un proyecto?</li> */}
+              <AccordionItemFAQs question="¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?" />
+              {/* <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?</li> */}
+              <AccordionItemFAQs question="¿Cómo selecciono al freelancer adecuado para mi proyecto?"/>
+              {/* <li>¿Cómo selecciono al freelancer adecuado para mi proyecto?</li> */}
+              <AccordionItemFAQs question="¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2"/>
+              {/* <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2</li> */}
+              <AccordionItemFAQs question="¿Cómo selecciono al freelancer adecuado para mi proyecto? X2"/>
+              {/* <li>¿Cómo selecciono al freelancer adecuado para mi proyecto? X2</li> */}
             </ul>
           </section>
         </main>
