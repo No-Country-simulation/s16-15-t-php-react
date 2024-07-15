@@ -35,19 +35,12 @@ const LandingPage = () => {
             <h2>Preguntas Frecuentes</h2>
             <ul className={styles.questionsList}>
               <AccordionItemFAQs question="¿Cómo puedo registrarme en SkillMatch?"/>
-              {/* <li>¿Cómo puedo registrarme en SkillMatch?</li> */}
               <AccordionItemFAQs question="¿Qué sucede si tengo un conflicto con un cliente?" />
-              {/* <li>¿Qué sucede si tengo un conflicto con un cliente?</li> */}
               <AccordionItemFAQs question="¿Cómo puedo publicar un proyecto?" />
-              {/* <li>¿Cómo puedo publicar un proyecto?</li> */}
               <AccordionItemFAQs question="¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?" />
-              {/* <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch?</li> */}
               <AccordionItemFAQs question="¿Cómo selecciono al freelancer adecuado para mi proyecto?"/>
-              {/* <li>¿Cómo selecciono al freelancer adecuado para mi proyecto?</li> */}
               <AccordionItemFAQs question="¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2"/>
-              {/* <li>¿Cómo puedo mejorar mis oportunidades de encontrar trabajo en SkillMatch? X2</li> */}
               <AccordionItemFAQs question="¿Cómo selecciono al freelancer adecuado para mi proyecto? X2"/>
-              {/* <li>¿Cómo selecciono al freelancer adecuado para mi proyecto? X2</li> */}
             </ul>
           </section>
         </main>
