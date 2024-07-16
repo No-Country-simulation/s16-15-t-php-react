@@ -12,12 +12,12 @@
   font-weight: 600;
 }
 
-section{
+.browserSections{
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
-}
+} 
 
 .experience{
   display: flex;
@@ -26,7 +26,8 @@ section{
   padding-top: 10px;
 }
 
-.experience button{
+
+.buttonExperience{
   border: 1px solid #8CABFB;
   padding: 10px;
   border-radius: 10px;

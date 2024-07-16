@@ -34,29 +34,29 @@ const BrowserFilters = () => {
 
   return (
     <aside className={styles.filtersContainer}>
-        <section>
+        <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Skills</h2>
           <Select options={skills}/>
         </section>
-        <section>
+        <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Ubicación</h2>
           <Select options={region} />
         </section>
-        <section>
+        <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Experiencia</h2>
           {/* temporario */}
           <div className={styles.experience}>
-            <button>Junior</button>
-            <button>Trainee</button>
-            <button>Semi Snr</button>
-            <button>Senior</button>
+            <button className={styles.buttonExperience}>Junior</button>
+            <button className={styles.buttonExperience}>Trainee</button>
+            <button className={styles.buttonExperience}>Semi Snr</button>
+            <button className={styles.buttonExperience}>Senior</button>
           </div>
         </section>
-        <section>
+        <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Idioma</h2>
           <Select options={language} />
         </section>
-        <section>
+        <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Precio</h2>
           {/* temporario */}
           <input type="range" />
