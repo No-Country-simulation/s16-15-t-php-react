@@ -7,10 +7,12 @@
   outline: none;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }  
 
-input{
+.inputSearch{
     border: none;
     outline: none;
+    width: none;
 }
 
