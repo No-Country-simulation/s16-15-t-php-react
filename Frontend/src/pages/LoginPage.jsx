@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ButtonGrey from '../components/button/ButtonGrey';
+import ButtonSocial from '../components/button/ButtonSocial';
 import ButtonBg from '../components/button/ButtonBg';
 import InputText from '../components/input/InputText';
 import InputPass from '../components/input/InputPass';
@@ -32,8 +32,8 @@ const LoginPage = () => {
                 ¿No tienes una cuenta? Regístrate
             </Link>
             <div className={styles.buttonContainer}>
-                <ButtonGrey to="/google" img={LogoGoogle} text="Continuar con Google" />
-                <ButtonGrey to="/facebook" img={LogoFacebook} text="Continuar con Facebook" />
+                <ButtonSocial to="/google" img={LogoGoogle} text="Continuar con Google" />
+                <ButtonSocial to="/facebook" img={LogoFacebook} text="Continuar con Facebook" />
             </div>
             <div className={styles.inputContainer}>
                 <InputText className={styles.inpFirst} type="email" placeholder="Email" onChange={handleEmailChange} />

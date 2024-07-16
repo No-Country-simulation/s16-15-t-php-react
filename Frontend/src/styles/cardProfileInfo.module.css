@@ -39,6 +39,7 @@ strong {
     justify-content: center;
 }
 
+/* La solución de margin right no es correcta, revisar */
 .lineInfo {
     display: flex;
     justify-content: space-between;
