@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/inputs.css';
+import styles from '../../styles/inputs.module.css';
 
 const InputText = ({ onChange, type, placeholder }) => {
   const handleChange = (e) => {
@@ -8,8 +8,7 @@ const InputText = ({ onChange, type, placeholder }) => {
 
   return (
     <input 
-      id="inp-text" 
-      className="inp" 
+      className={styles.inpText} 
       type={type}
       placeholder={placeholder}
       onChange={handleChange}

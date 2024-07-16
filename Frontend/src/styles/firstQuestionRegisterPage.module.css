@@ -1,0 +1,45 @@
+.tagMain {
+    margin-top: 7%;
+}
+
+.tagMain h2 {
+    font-weight: 500;
+    width: 100%;
+}
+
+.divTitle {
+    display: flex;
+    text-align: center;
+}
+
+.divCards {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.divButLog {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.divButLog a {
+    font-size: 18px;
+}
+
+.divButLog button {
+    font-size: 18px;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.tagMain a {
+    margin-top: 4%;
+}
+
+.linkID {
+    display: flex;
+    justify-content: center;
+    text-decoration:underline;
+}

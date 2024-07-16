@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/firstQuestionRegisterPage.css';
+import styles from '../styles/firstQuestionRegisterPage.module.css';
 import CardRegisterQuestion from '../components/card/CardRegisterQuestion';
 import ButtonBg from '../components/button/ButtonBg';
 
@@ -14,17 +14,17 @@ const FirstQuestionRegisterPage = () => {
   };
 
   return (
-    <main id="tag-main">
-      <div id="div-title">
+    <main className={styles.tagMain}>
+      <div className={styles.divTitle}>
         <h2>¿Eres cliente o freelancer?</h2>
       </div>
-      <div id="div-cards">
+      <div className={styles.divCards}>
         <CardRegisterQuestion onOptionChange={handleOptionChange} />
       </div>
-      <div id="div-but-log">
+      <div className={styles.divButLog}>
         <ButtonBg to="/registerForm" text="Crear cuenta" />
       </div>
-      <Link id="linkID" className="link" to="/login">
+      <Link className={styles.linkID} to="/login">
         ¿Ya tienes cuenta? Ingresa aquí
       </Link>
     </main>

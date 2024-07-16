@@ -1,0 +1,57 @@
+.frm1 {
+    margin: auto;
+    margin-top: 67px;
+    height: 580px;
+    width: 30%;
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttonContainer {
+    margin: auto;
+    width: 95%;
+}
+
+.buttonContainer button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.divName {
+    display: flex;
+    margin-top: 4%;
+}
+
+.divName input {
+    width: 45%;
+}
+
+.divPass {
+    margin-top: 4%;
+}
+
+.divPass div {
+    margin-bottom: 4%;
+}
+
+.divInput1 {
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.divLog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}

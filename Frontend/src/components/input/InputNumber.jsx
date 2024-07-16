@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import IntlTelInput from 'react-intl-tel-input';
 import 'react-intl-tel-input/dist/main.css';
+import styles from '../../styles/inputs.module.css';
 
 const InputNumber = ({ onPhoneNumberChange, placeholder }) => {
   const [phone, setPhone] = useState("");
@@ -13,8 +14,9 @@ const InputNumber = ({ onPhoneNumberChange, placeholder }) => {
   };
 
   return (
-    <div id="div-inp-tel">
+    <div className={styles.divInpTel}>
       <IntlTelInput
+        className={styles.intlTelInput}
         onPhoneNumberChange={handlePhoneChange}
         preferredCountries={['ar', 've']}
         value={phone}
