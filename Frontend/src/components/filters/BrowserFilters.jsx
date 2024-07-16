@@ -13,6 +13,25 @@ const BrowserFilters = () => {
     {value: "ingenieria y finanzas", label: "Ingenieria y finanzas"},
   ]
 
+  const region = [
+    {value: "todas las regiones", label: "Todas las regiones"},
+    {value: "américa del sur y central", label: "América del Sur y Central"},
+    {value: "américa del norte", label: "América del Norte"},
+    {value: "europa", label: "Europa"},
+    {value: "africa", label: "Africa"},
+    {value: "asia", label: "Asia"},
+    {value: "asutralia / Oceania ", label: "Asutralia / Oceania"},
+  ]
+
+  const language = [
+    {value: "todos los idiomas", label: "Todos los idiomas"},
+    {value: "ingles", label: "Ingles"},
+    {value: "español", label: "Español"},
+    {value: "italiano", label: "Italiano"},
+    {value: "francés", label: "Francés"},
+    {value: "portugués", label: "Portugués"},
+  ]
+
   return (
     <aside className={styles.filtersContainer}>
         <section>
@@ -21,15 +40,26 @@ const BrowserFilters = () => {
         </section>
         <section>
           <h2 className={styles.filtersTitle}>Ubicación</h2>
+          <Select options={region} />
         </section>
         <section>
           <h2 className={styles.filtersTitle}>Experiencia</h2>
+          {/* temporario */}
+          <div className={styles.experience}>
+            <button>Junior</button>
+            <button>Trainee</button>
+            <button>Semi Snr</button>
+            <button>Senior</button>
+          </div>
         </section>
         <section>
           <h2 className={styles.filtersTitle}>Idioma</h2>
+          <Select options={language} />
         </section>
         <section>
           <h2 className={styles.filtersTitle}>Precio</h2>
+          {/* temporario */}
+          <input type="range" />
         </section>
     </aside>
   )

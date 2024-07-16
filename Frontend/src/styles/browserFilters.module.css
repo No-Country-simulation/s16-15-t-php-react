@@ -1,12 +1,33 @@
 .filtersContainer{
   width: 420px;
-  height: 529px;
+  /* height: 529px; */
   border: 1px solid #8CABFB;
   border-radius: 15px;
-  
+  /* temporario */
+  margin-left: 30px;
 }
 
 .filtersTitle{
   font-size: 20px;
   font-weight: 600;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.experience{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.experience button{
+  border: 1px solid #8CABFB;
+  padding: 10px;
+  border-radius: 10px;
 }
