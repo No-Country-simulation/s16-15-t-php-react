@@ -1,0 +1,10 @@
+.mainDiv {
+    margin: auto;
+    margin-top: 67px;
+    height: 390px;
+    width: 45%;
+    border: 1px solid #8CABFB;
+    border-radius: 12px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}

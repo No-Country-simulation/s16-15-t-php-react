@@ -5,6 +5,8 @@ import LandingPage from './pages/LandingPage'
 import LoginPage from './pages/LoginPage';
 import RegisterFormPage from './pages/RegisterFormPage';
 import FirstQuestionRegisterPage from './pages/FirstQuestionRegisterPage';
+// Lo siguiente lo muestra como error pero lo corre correctamente
+import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/registerForm' element={<RegisterFormPage />} />
           <Route path='/firstQuestionregister' element={<FirstQuestionRegisterPage />} />
+          <Route path='/freelancerProfileView' element={<FreelancerProfileViewPage />} />
         </Routes>
       </div>
     </Router>
