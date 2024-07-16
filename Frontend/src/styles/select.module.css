@@ -1,0 +1,16 @@
+/* .selectContainer{
+
+} */
+
+.select{
+  border: none;
+  outline: none;
+  width: 370px;
+  border: 1px solid #93B0FB;
+  border-radius: 20px;
+}
+
+.select .option{
+  border-radius: 20px;
+
+}

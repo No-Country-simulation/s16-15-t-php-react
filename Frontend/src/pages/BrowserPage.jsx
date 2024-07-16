@@ -1,7 +1,12 @@
+import BrowserFilters from "../components/filters/BrowserFilters"
 
 function BrowserPage() {
   return (
-    <div>BrowserPage</div>
+    <div>
+      <main>
+        <BrowserFilters />
+      </main> 
+    </div>
   )
 }
 
