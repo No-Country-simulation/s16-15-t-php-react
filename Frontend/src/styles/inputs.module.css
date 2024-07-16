@@ -1,0 +1,67 @@
+/* InputText */
+.inpText {
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 5%;
+    color: #8CABFB;
+    margin: auto;
+}
+
+.inpText::placeholder {
+    color: #8CABFB;
+}
+
+/* InputPass */
+.inpPassDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 5%;
+    color: #8CABFB;
+    margin: auto;
+}
+
+.inp {
+    width: 90%;    
+}
+
+.inp:focus {
+    outline: none;
+}
+
+.inp::placeholder {
+    color: #8CABFB;
+}
+
+.imgEye {
+    cursor: pointer;
+}
+
+/* InputNumber */
+.divInpTel {
+    width: 100%;
+    display: flex;
+    width: 95%;
+    border: 1px solid #8CABFB;
+    border-radius: 25px;
+    padding: 10px;
+    color: #8CABFB;
+    margin: auto;
+}
+
+.divInpTel input:focus {
+    outline: 0;
+}
+
+.divInpTel input:hover {
+    background-color: transparent;
+}
+
+.divInpTel input::placeholder {
+    color: #8CABFB;
+}
