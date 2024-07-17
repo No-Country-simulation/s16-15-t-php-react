@@ -3,7 +3,7 @@ nav{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px
+  padding-top: 20px
 }
 
 .logoLink{
@@ -12,5 +12,5 @@ nav{
 }
 
 .navLinks a{
-  padding: 20px;
-}
+  padding: 15px;
+} 
