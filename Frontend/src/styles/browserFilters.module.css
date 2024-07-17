@@ -19,15 +19,41 @@
   padding: 20px;
 } 
 
-.experience{
+.btnSection{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
-.buttonExperience{
+
+.buttonSquare{
   border: 1px solid #8CABFB;
   padding: 10px;
   border-radius: 10px;
 }
+
+.rangeContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+  width: 72px;
+  border: 1px solid #8CABFB;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.range{
+  width: 287px;
+  height: 4px;
+  -webkit-appearance: none;
+  background-color: #8CABFB;
+  outline: none;
+}
+
+
+

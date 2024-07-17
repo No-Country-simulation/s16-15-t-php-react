@@ -1,0 +1,19 @@
+.browserTabs{
+  display: flex;
+  padding: 30px;
+  width: 450px;
+  justify-content: space-between;
+}
+
+.tabs{
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.browser{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

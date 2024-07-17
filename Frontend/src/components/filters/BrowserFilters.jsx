@@ -1,5 +1,6 @@
 import styles from '../../styles/browserFilters.module.css'
 import Select from '../select/Select'
+import PropTypes from 'prop-types'
 
 const BrowserFilters = () => {
   const skills = [
@@ -32,6 +33,15 @@ const BrowserFilters = () => {
     {value: "portugués", label: "Portugués"},
   ]
 
+  // temporario
+  const ButtonSquare = ({label}) => {
+    return <button className={styles.buttonSquare}>{label}</button>
+  };
+
+  ButtonSquare.propTypes = {
+    label: PropTypes.string,
+  }
+
   return (
     <aside className={styles.filtersContainer}>
         <section className={styles.browserSections}>
@@ -45,21 +55,32 @@ const BrowserFilters = () => {
         <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Experiencia</h2>
           {/* temporario */}
-          <div className={styles.experience}>
-            <button className={styles.buttonExperience}>Junior</button>
-            <button className={styles.buttonExperience}>Trainee</button>
-            <button className={styles.buttonExperience}>Semi Snr</button>
-            <button className={styles.buttonExperience}>Senior</button>
+          <div className={styles.btnSection}>
+            <ButtonSquare label="Junior" />
+            <ButtonSquare label="Trainee" />
+            <ButtonSquare label="Semi Snr" />
+            <ButtonSquare label="Senior" />
           </div>
         </section>
         <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Idioma</h2>
           <Select options={language} />
+          {/* temporario */}
+          <div className={styles.btnSection}>
+            <ButtonSquare label="Básico" />
+            <ButtonSquare label="Intermedio" />
+            <ButtonSquare label="Avanzado" />
+            <ButtonSquare label="Nativo" />
+          </div>
         </section>
         <section className={styles.browserSections}>
           <h2 className={styles.filtersTitle}>Precio</h2>
           {/* temporario */}
-          <input type="range" />
+          <div className={styles.rangeContainer}>
+            <div className={styles.price}>$20</div>
+            <input type="range" className={styles.range} />
+          </div>
+        
         </section>
     </aside>
   )
