@@ -14,7 +14,7 @@
     color: white;
 }
 
-.btnGrey {
+.btnSocial {
     width: 300px;
     display: flex;
     justify-content: center;
@@ -33,8 +33,23 @@
     text-align: center; /* Centra el texto */
 }
 
-.btnGrey img {
+.btnSocial img {
     width: 35px;
     height: 25px;
     margin-right: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+.btnGrey {
+    background-color: #E8EAEF;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: fit-content;
+    margin-right: 5%;
+}
+
+.btnGrey:hover {
+    cursor:auto;
 }
