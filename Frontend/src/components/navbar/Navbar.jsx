@@ -4,6 +4,9 @@ import styles from'../../styles/navbar.module.css'
 import { Link, useLocation } from "react-router-dom"
 import logo from '../../assets/logo.svg'
 import InputSearch from "../input/InputSearch"
+import offerIcon from "../../assets/ofertas.svg"
+import proposalsIcon from "../../assets/propuestas.svg" 
+import ButtonIcon from "../button/ButtonIcon"
 
 
 function Navbar() {
@@ -20,6 +23,8 @@ function Navbar() {
         {location.pathname === '/' && <Link className='link'>Preguntas Frecuentes</Link>}
         {location.pathname === '/' && <ButtonBdr text="Ingresa" to='/login' />}
         {location.pathname === '/' && <ButtonBg text="Registrate" to='/registerForm' />}
+        {location.pathname === '/browser' && <ButtonIcon iconSrc={offerIcon} />}
+        {location.pathname === '/browser' && <ButtonIcon iconSrc={proposalsIcon} />}
       </div>
     </nav>
   )
