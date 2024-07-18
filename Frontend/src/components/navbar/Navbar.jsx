@@ -18,8 +18,8 @@ function Navbar() {
       <div className={styles.navLinks}>
         {location.pathname === '/' && <Link className='link'>Sobre Nosotros</Link>}
         {location.pathname === '/' && <Link className='link'>Preguntas Frecuentes</Link>}
-        {location.pathname === '/' && <ButtonBdr text="Ingresa" />}
-        {location.pathname === '/' && <ButtonBg text="Registrate" />}
+        {location.pathname === '/' && <ButtonBdr text="Ingresa" to='/login' />}
+        {location.pathname === '/' && <ButtonBg text="Registrate" to='/registerForm' />}
       </div>
     </nav>
   )

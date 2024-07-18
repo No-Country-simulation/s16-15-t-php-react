@@ -1,0 +1,65 @@
+
+.selectContainer {
+  position: relative;
+  background-color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.select {
+  width: 370px;
+  height: 35px;
+  border: 1px solid #93B0FB;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 3px 15px 3px 10px;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.select.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+
+.arrow {
+  padding-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+.options {
+  width: 370px;
+  position: absolute;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  z-index: 99;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 0 0 20px 20px; 
+  border: 1px solid #93B0FB;
+  border-top: none;
+}
+
+.options::-webkit-scrollbar {
+  display: none;
+}
+
+.option {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color:#BCC1CF59;
+}
