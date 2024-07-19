@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom"
+import styles from "../../styles/buttons.module.css"
 
 const ButtonIcon = ({to, iconSrc, altText}) => {
   return (
-    <Link to={to}>
-      <img src={iconSrc} alt={altText} />
+    <Link to={to} className={styles.buttonIcon}>
+      <img src={iconSrc} alt={altText} className={styles.iconBtn} />
     </Link>
   )
 }

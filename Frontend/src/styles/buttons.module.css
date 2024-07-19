@@ -53,3 +53,11 @@
 .btnGrey:hover {
     cursor:auto;
 }
+
+.buttonIcon{
+    display: inline-block;
+}
+
+.iconBtn {
+    padding: 0 20px;
+}
