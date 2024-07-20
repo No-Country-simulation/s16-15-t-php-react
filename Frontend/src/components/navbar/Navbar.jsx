@@ -8,6 +8,7 @@ import offerIcon from "../../assets/ofertas.svg"
 import proposalsIcon from "../../assets/propuestas.svg" 
 import ButtonIcon from "../button/ButtonIcon"
 import NavSelect from "../select/NavSelect"
+import ButtonProfile from "../button/ButtonProfile"
 
 
 function Navbar() {
@@ -16,7 +17,8 @@ function Navbar() {
   const hiddenComponentsRoutes = {
     inputSearch: ['/login', '/registerForm', '/firstQuestionregister'],
     buttonIcon: ['/', '/login', '/registerForm', '/firstQuestionregister'],
-    navSelect: ['/', '/login', '/registerForm', '/firstQuestionregister']
+    navSelect: ['/', '/login', '/registerForm', '/firstQuestionregister'],
+    buttonProfile: ['/', '/login', '/registerForm', '/firstQuestionregister']
   }
 
   const shouldShowComponent = (component) => {
@@ -39,6 +41,7 @@ function Navbar() {
         {shouldShowComponent('navSelect') && <NavSelect />}
         {shouldShowComponent('buttonIcon') && <ButtonIcon iconSrc={proposalsIcon} to='/proposals' />}
         {shouldShowComponent('buttonIcon') && <ButtonIcon iconSrc={offerIcon} />}
+        {shouldShowComponent('buttonProfile') && <ButtonProfile />}
         </div>
     </nav>
   )
