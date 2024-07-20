@@ -1,0 +1,60 @@
+
+.selectNavContainer {
+    position: relative;
+    background-color: white;
+    padding: 0 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.selectNav {
+    width: 117px;
+    height: 35px;
+    background-color: #405ACF;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 3px 15px 3px 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.selectNav.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+}
+
+.arrowWhite {
+  padding: 10px 5px;
+}
+
+.options {
+    width: 117px;
+    position: absolute;
+    background-color: #405ACF;
+    color: white;
+    z-index: 99;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 0 0 20px 20px; 
+    border-top: none;
+}
+
+.options::-webkit-scrollbar {
+    display: none;
+}
+
+.option {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color:#BCC1CF59;
+}

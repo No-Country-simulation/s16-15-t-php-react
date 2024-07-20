@@ -2,7 +2,16 @@
   display: flex;
   padding: 30px;
   width: 450px;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.browser{
+  display: flex;
+  flex-direction: row;
+}
+
+.cardContainer{
+  padding: 0 18px 10px;
 }
 
 .tabs{
@@ -12,7 +21,13 @@
   cursor: pointer;
 }
 
-.browser{
-  display: flex;
-  justify-content: space-between;
+.tab{
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.activeTab{
+  border-bottom: 3px solid #405ACF;
 }

@@ -1,6 +1,6 @@
 .filtersContainer{
   width: 420px;
-  /* height: 529px; */
+  max-height: 990px;
   border: 1px solid #8CABFB;
   border-radius: 15px;
   /* temporario */

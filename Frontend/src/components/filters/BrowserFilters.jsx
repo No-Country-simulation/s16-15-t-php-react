@@ -2,7 +2,7 @@ import styles from '../../styles/browserFilters.module.css'
 import Select from '../select/Select'
 import PropTypes from 'prop-types'
 
-const BrowserFilters = () => {
+const BrowserFilters = ({ activeTab }) => {
   const skills = [
     {value: "todos", label: "Todos"},
     {value: "programador", label: "Programador"},
@@ -31,6 +31,17 @@ const BrowserFilters = () => {
     {value: "italiano", label: "Italiano"},
     {value: "francés", label: "Francés"},
     {value: "portugués", label: "Portugués"},
+  ]
+
+  const projectDuration = [
+    {value: "Menos de un mes", label: "Menos de un mes"},
+    {value: "Mas de un mes", label: "Mas de un mes"},
+    {value: "Un año", label: "Un año"},
+  ]
+
+  const hoursPerWeek = [
+    {valu: "Menos de 30 horas semanal", label: "Menos de 30 horas semanal"},
+    { value: "menos_de_10", label: "Menos de 10 horas semanal" }
   ]
 
   // temporario
@@ -80,10 +91,25 @@ const BrowserFilters = () => {
             <div className={styles.price}>$20</div>
             <input type="range" className={styles.range} />
           </div>
-        
         </section>
+        {activeTab === 'ofertas' && (
+          <>
+          <section className={styles.browserSections}>
+            <h2 className={styles.filtersTitle}>Duración del proyecto</h2>
+            <Select options={projectDuration}/>
+          </section> 
+          <section className={styles.browserSections}>
+            <h2 className={styles.filtersTitle}>Horas por semana</h2>
+            <Select options={hoursPerWeek}/>
+          </section>
+          </>
+        )}
     </aside>
   )
+}
+
+BrowserFilters.propTypes = {
+  activeTab: PropTypes.string
 }
 
 export default BrowserFilters
