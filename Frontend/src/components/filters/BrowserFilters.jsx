@@ -33,6 +33,17 @@ const BrowserFilters = ({ activeTab }) => {
     {value: "portugués", label: "Portugués"},
   ]
 
+  const projectDuration = [
+    {value: "Menos de un mes", label: "Menos de un mes"},
+    {value: "Mas de un mes", label: "Mas de un mes"},
+    {value: "Un año", label: "Un año"},
+  ]
+
+  const hoursPerWeek = [
+    {valu: "Menos de 30 horas semanal", label: "Menos de 30 horas semanal"},
+    { value: "menos_de_10", label: "Menos de 10 horas semanal" }
+  ]
+
   // temporario
   const ButtonSquare = ({label}) => {
     return <button className={styles.buttonSquare}>{label}</button>
@@ -85,11 +96,11 @@ const BrowserFilters = ({ activeTab }) => {
           <>
           <section className={styles.browserSections}>
             <h2 className={styles.filtersTitle}>Duración del proyecto</h2>
-            <Select options={skills}/>
+            <Select options={projectDuration}/>
           </section> 
           <section className={styles.browserSections}>
             <h2 className={styles.filtersTitle}>Horas por semana</h2>
-            <Select options={skills}/>
+            <Select options={hoursPerWeek}/>
           </section>
           </>
         )}
