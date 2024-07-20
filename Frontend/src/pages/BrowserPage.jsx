@@ -19,7 +19,7 @@ function BrowserPage() {
         onClick={() => {setActiveTab('ofertas')}}>Ofertas</h2>
       </header>
       <main className={styles.browser}>
-        <BrowserFilters />
+        <BrowserFilters activeTab={activeTab} />
         <section className={styles.cardContainer}>
         {activeTab === 'freelancers' ? (
           <>
