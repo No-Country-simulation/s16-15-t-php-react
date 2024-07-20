@@ -1,0 +1,47 @@
+.pageTitle{
+  padding: 30px 20px;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 18px 10px;
+}
+
+.infoCard{
+  min-width: 415px;
+  height: 215px;
+  border: 1px solid #8CABFB;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.infoTitle{
+  font-size: 18px;
+  color:#404040;
+  font-weight: 600;
+  padding: 2px;
+}
+
+.info{
+  color: #404040;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoText{
+  font-size: 15px;
+  padding: 2px;
+  color: #404040;
+}
+
+.proposalsContainer {
+  /* temporario */
+  margin-left: 20px;
+}
