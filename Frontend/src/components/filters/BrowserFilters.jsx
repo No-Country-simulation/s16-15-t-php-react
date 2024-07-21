@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import styles from '../../styles/browserFilters.module.css'
 import Select from '../select/Select'
 import PropTypes from 'prop-types'
 
 const BrowserFilters = ({ activeTab }) => {
+  const [price, setPrice] = useState(20);
+
   const skills = [
     {value: "todos", label: "Todos"},
     {value: "programador", label: "Programador"},
@@ -88,8 +91,8 @@ const BrowserFilters = ({ activeTab }) => {
           <h2 className={styles.filtersTitle}>Precio</h2>
           {/* temporario */}
           <div className={styles.rangeContainer}>
-            <div className={styles.price}>$20</div>
-            <input type="range" className={styles.range} />
+            <div className={styles.price}>${price}</div>
+            <input type="range" className={styles.range} value={price} onChange={(e) => setPrice(e.target.value)} />
           </div>
         </section>
         {activeTab === 'ofertas' && (
