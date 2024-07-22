@@ -8,6 +8,7 @@ import FirstQuestionRegisterPage from './pages/FirstQuestionRegisterPage';
 import BrowserPage from './pages/BrowserPage';
 // Lo siguiente lo muestra como error pero lo corre correctamente
 import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
+import ProposalsPage from './pages/ProposalsPage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/firstQuestionregister' element={<FirstQuestionRegisterPage />} />
           <Route path='/browser' element={<BrowserPage />} />
           <Route path='/freelancerProfileView' element={<FreelancerProfileViewPage />} />
+          <Route path='/proposals' element={<ProposalsPage />} />
         </Routes>
       </div>
     </Router>
