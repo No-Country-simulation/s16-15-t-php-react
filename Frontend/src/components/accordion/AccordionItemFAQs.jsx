@@ -18,17 +18,17 @@ function AccordionItemFAQs({ question }) {
 
   return (
     <li onClick={toggleAccordion} className={styles.questionItem}>
-    <div className={styles.questionTitle}>
-      <img src={arrow} alt="arrow" className={`${styles.arrowIcon} ${isOpen ? styles.rotate : ''}`}/>
-      {question}
-    </div>
-    <div
-      ref={contentRef}
-      style={{ maxHeight }}
-      className={`${styles.answer} ${isOpen ? styles.answerOpen : ''}`}>
-      <p>Respuesta</p>
-    </div>
-  </li>
+      <div className={styles.questionTitle}>
+        <img src={arrow} alt="arrow" className={`${styles.arrowIcon} ${isOpen ? styles.rotate : ''}`}/>
+        {question}
+      </div>
+      <div
+        ref={contentRef}
+        style={{ maxHeight }}
+        className={`${styles.answer} ${isOpen ? styles.answerOpen : ''}`}>
+        <p>Respuesta</p>
+      </div>
+    </li>
   )
 }
 

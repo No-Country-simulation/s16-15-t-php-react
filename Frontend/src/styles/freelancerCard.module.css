@@ -10,6 +10,21 @@
   margin-bottom: 15px;
 }
 
+.toolsText {
+  font-size: 13px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.toolsButtons {
+  width: 100%;
+  margin-left: 5%;
+}
+
 .titleSection{
   display: flex;
   flex-direction: row;
