@@ -40,7 +40,7 @@ function Navbar() {
       <div className={styles.navButtons}>
         {shouldShowComponent('navSelect') && <NavSelect />}
         {shouldShowComponent('buttonIcon') && <ButtonIcon iconSrc={proposalsIcon} to='/proposals' />}
-        {shouldShowComponent('buttonIcon') && <ButtonIcon iconSrc={offerIcon} />}
+        {shouldShowComponent('buttonIcon') && <ButtonIcon iconSrc={offerIcon} to='/offers' />}
         {shouldShowComponent('buttonProfile') && <ButtonProfile />}
         </div>
     </nav>
