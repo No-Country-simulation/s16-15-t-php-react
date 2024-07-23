@@ -9,6 +9,7 @@ import BrowserPage from './pages/BrowserPage';
 // Lo siguiente lo muestra como error pero lo corre correctamente
 import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
 import ProposalsPage from './pages/ProposalsPage';
+import OffersPage from './pages/OffersPage';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/browser' element={<BrowserPage />} />
           <Route path='/freelancerProfileView' element={<FreelancerProfileViewPage />} />
           <Route path='/proposals' element={<ProposalsPage />} />
+          <Route path='/offers' element={<OffersPage />} />
         </Routes>
       </div>
     </Router>
