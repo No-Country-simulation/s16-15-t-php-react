@@ -17,11 +17,13 @@ function BrowserPage() {
         onClick={() => {setActiveTab('freelancers')}}>Freelancers</h2>
         <h2 className={`${styles.tabs} ${activeTab === 'ofertas' ? styles.activeTab : ''}`}
         onClick={() => {setActiveTab('ofertas')}}>Ofertas</h2>
+        <h2 className={`${styles.tabs} ${activeTab === 'propuestas' ? styles.activeTab : ''}`}
+        onClick={() => {setActiveTab('propuestas')}}>Propuestas</h2>
       </header>
       <main className={styles.browser}>
         <BrowserFilters activeTab={activeTab} />
         <section className={styles.cardContainer}>
-        {activeTab === 'freelancers' ? (
+        {activeTab === 'freelancers' && (
           <>
             <FreelancerCard 
             img={profilePic}
@@ -46,8 +48,9 @@ function BrowserPage() {
             className={stylesProps}
             />
           </>
-        ) : (
-          <>
+        )} 
+        {activeTab === 'ofertas' && (
+            <>
             <OfferProposalCard 
             title="Creador de contenido de TikTok y experto en crecimiento y participación"
             countryandprice="País: Colombia  -  $300USD por semana"
@@ -74,8 +77,26 @@ function BrowserPage() {
             text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
             />
           </>
-        )
-      }
+        )}
+        {activeTab === 'propuestas' && (
+              <>
+              <OfferProposalCard 
+                title="Creador de contenido para redes sociales"
+                countryandprice="País: Mexico  -  $300USD por semana"
+                text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+              />
+              <OfferProposalCard 
+                title="Creador de contenido de TikTok y experto en crecimiento y participación"
+                countryandprice="País: Colombia  -  $300USD por semana"
+                text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+              />
+              <OfferProposalCard 
+                title="Consultor en marketing digital para ecommerce"
+                countryandprice="País: Chile  -  $400USD por semana"
+                text="Estamos buscando un consultor en marketing digital con experiencia en ecommerce para ayudarnos a aumentar nuestras ventas online. Si tienes conocimientos en SEO, SEM y campañas de redes sociales, queremos trabajar contigo."
+              />
+            </>
+        )}
         
         </section>
       </main> 

@@ -95,7 +95,7 @@ const BrowserFilters = ({ activeTab }) => {
             <input type="range" className={styles.range} value={price} onChange={(e) => setPrice(e.target.value)} />
           </div>
         </section>
-        {activeTab === 'ofertas' && (
+        {(activeTab === 'ofertas' || activeTab === 'propuestas') && (
           <>
           <section className={styles.browserSections}>
             <h2 className={styles.filtersTitle}>Duración del proyecto</h2>
