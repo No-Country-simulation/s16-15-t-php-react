@@ -11,6 +11,7 @@ import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
 import ProposalsPage from './pages/ProposalsPage';
 import OffersPage from './pages/OffersPage';
 import CreateProposalForm from './pages/CreateProposalForm';
+import ProposalForm from './pages/ProposalForm';
 
 function App() {
 

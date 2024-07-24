@@ -50,7 +50,7 @@ const CreateProposalForm = () => {
 
       </section>
       <div className={styles.buttonNextContainer}>
-          <ButtonBg text="Siguiente" />
+          <ButtonBg text="Siguiente" to='/proposalForm' />
       </div>
     </main>
   )
