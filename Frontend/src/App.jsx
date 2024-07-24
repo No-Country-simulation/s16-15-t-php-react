@@ -27,7 +27,8 @@ function App() {
           <Route path='/freelancerProfileView' element={<FreelancerProfileViewPage />} />
           <Route path='/proposals' element={<ProposalsPage />} />
           <Route path='/offers' element={<OffersPage />} />
-          <Route path='/proposalForm' element={<CreateProposalForm />} />
+          <Route path='/createProposalForm' element={<CreateProposalForm />} />
+          <Route path='/proposalForm' element={<ProposalForm />} />
         </Routes>
       </div>
     </Router>
