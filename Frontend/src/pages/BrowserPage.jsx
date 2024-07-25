@@ -54,7 +54,6 @@ function BrowserPage() {
                 countryandprice="País: Colombia  -  $300USD por semana"
                 text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
               />
-              {/* Otros OfferProposalCard sin cambios */}
             </>
           )}
           {activeTab === 'propuestas' && (
@@ -64,7 +63,6 @@ function BrowserPage() {
                 countryandprice="País: Mexico  -  $300USD por semana"
                 text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
               />
-              {/* Otros OfferProposalCard sin cambios */}
             </>
           )}
         </section>
