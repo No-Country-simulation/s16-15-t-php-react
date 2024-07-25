@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Finished;
 use Illuminate\Database\Seeder;
 
 class FinishedSeeder extends Seeder
@@ -12,6 +12,6 @@ class FinishedSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Finished::factory()->count(5)->create();
     }
 }

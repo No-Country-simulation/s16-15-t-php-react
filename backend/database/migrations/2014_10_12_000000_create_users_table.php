@@ -18,6 +18,8 @@ return new class extends Migration
             $table->unsignedTinyInteger('id_typeuser');
             $table->string('telefono');
             $table->timestamp('email_verified_at')->nullable();
+            $table->json('certificados')->nullable();
+            $table->string('ubicacion'); 
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

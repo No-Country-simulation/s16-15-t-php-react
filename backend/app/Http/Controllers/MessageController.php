@@ -2,49 +2,46 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreMessageRequest;
-use App\Http\Requests\UpdateMessageRequest;
+use App\Http\Requests\Message\MessageStoreRequest;
+use App\Http\Requests\Message\MessageUpdateRequest;
+use App\Http\Resources\Message\MessageCollection;
+use App\Http\Resources\Message\MessageResource;
 use App\Models\Message;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class MessageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function index(Request $request): MessageCollection
     {
-        //
+        $messages = Message::all();
+
+        return new MessageCollection($messages);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreMessageRequest $request)
+    public function store(MessageStoreRequest $request): MessageResource
     {
-        //
+        $message = Message::create($request->validated());
+
+        return new MessageResource($message);
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Message $message)
+    public function show(Request $request, Message $message): MessageResource
     {
-        //
+        return new MessageResource($message);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateMessageRequest $request, Message $message)
+    public function update(MessageUpdateRequest $request, Message $message): MessageResource
     {
-        //
+        $message->update($request->validated());
+
+        return new MessageResource($message);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Message $message)
+    public function destroy(Request $request, Message $message): Response
     {
-        //
+        $message->delete();
+
+        return response()->noContent();
     }
 }

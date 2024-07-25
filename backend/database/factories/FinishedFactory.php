@@ -3,21 +3,29 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use App\Models\Finished;
+use App\Models\Offer;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Finished>
- */
 class FinishedFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * The name of the factory's corresponding model.
      *
-     * @return array<string, mixed>
+     * @var string
+     */
+    protected $model = Finished::class;
+
+    /**
+     * Define the model's default state.
      */
     public function definition(): array
     {
         return [
-            //
+            'employer_score' => $this->faker->word(),
+            'freelancer_score' => $this->faker->word(),
+            'was_completed' => $this->faker->boolean(),
+            'offer_id' => Offer::factory(),
         ];
     }
 }
