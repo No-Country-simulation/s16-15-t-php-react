@@ -1,0 +1,34 @@
+.mainDiv {
+    display: flex;
+    width: 762px;
+    height: 307px;
+    border-radius: 15px;
+    background-color: #405ACF;
+    color: #FFFFFF;
+}
+
+.cardImg {
+    width: 350px;
+    height: 303px;
+    padding-left: 9%;
+}
+
+.cardTxt {
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cardBut {
+    width: 43px;
+    height: 5px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-right: 4%;
+    border: none;
+    cursor: pointer;
+}
+
+.selectedBut {
+    background-color: #8CABFB;
+}
