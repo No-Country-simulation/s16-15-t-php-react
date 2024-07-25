@@ -15,21 +15,15 @@ strong {
 .mainDiv {
     display: flex;
     justify-content: center;
-    height: 420px;
-    width: 450px;
+    height: 307px;
+    width: 415px;
     border: 1px solid #8CABFB;
     border-radius: 12px;
-    padding-top: 5%;
-    padding-bottom: 1%;
 }
 
 .secondDiv {
-    width: 80%;
-    margin-top: 3%;
-}
-
-.infoDiv {
-    margin-top: 10%;
+    width: 90%;
+    margin-top: 7%;
 }
 
 .buttonDiv {
@@ -42,4 +36,26 @@ strong {
     display: flex;
     justify-content: space-between;
     margin-right: 20%;
+}
+
+.strongTxt {
+    font-size: 35px;
+}
+
+.nameDiv {
+    display:grid;
+    margin-left: 5%;
+}
+
+.profileImg {
+    width: 117px;
+    height: 119px;
+}
+
+.pTag {
+    padding: 0;
+}
+
+.infoDiv {
+    margin-top: 5%;
 }

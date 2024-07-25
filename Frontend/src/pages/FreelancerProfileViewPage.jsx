@@ -30,7 +30,7 @@ const FreelancerProfileViewPage = () => {
           </section>
       </div>
       <div className={styles.rightDiv}>
-        <CardProfileInfo />
+        <CardProfileInfo text="Contratar" />
       </div>
     </div>
   )
