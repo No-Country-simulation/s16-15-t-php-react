@@ -1,15 +1,13 @@
-.cardOPcontainer{
+.cardOPcontainer {
   border: 1px solid #8CABFB;
-  min-width: 740px;
-  min-height: 208px;
   display: flex;
   border-radius: 15px;
   flex-direction: column;
   padding: 20px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
-.opTitle{
+.opTitle {
   font-size: 18px;
   font-weight: 600;
 }
@@ -20,7 +18,7 @@
   padding: 0 0 10px;
 }
 
-.text{
+.text {
   font-size: 14px;
   padding: 10px 0 10px;
 }

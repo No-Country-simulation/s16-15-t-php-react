@@ -25,7 +25,7 @@ const ProposalForm = () => {
         </form>
       </section>
       <section className={styles.buttonNextContainer}>
-        <ButtonBg text="Siguiente" to='/proposalForm' />
+        <ButtonBg text="Siguiente" to='/proposalFormEnd' />
       </section>
     </main>
   )

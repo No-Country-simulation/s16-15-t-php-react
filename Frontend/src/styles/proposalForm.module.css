@@ -1,3 +1,4 @@
+/* Proposal Form  */
 .proposalFormContainer{
   display: flex;
   max-height: 80vh;
@@ -102,4 +103,14 @@
 ::-webkit-scrollbar-thumb {
   background-color: #C1C1C1; 
   border-radius: 6px;
+}
+
+/* Proposal Form End */
+
+.buttonSquare{
+  border: 1px solid #8CABFB;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
+  padding: 15px;
 }

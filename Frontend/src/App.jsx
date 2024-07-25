@@ -6,13 +6,13 @@ import LoginPage from './pages/LoginPage';
 import RegisterFormPage from './pages/RegisterFormPage';
 import FirstQuestionRegisterPage from './pages/FirstQuestionRegisterPage';
 import BrowserPage from './pages/BrowserPage';
-// Lo siguiente lo muestra como error pero lo corre correctamente
 import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
 import ProposalsPage from './pages/ProposalsPage';
 import OffersPage from './pages/OffersPage';
 import CreateProposalForm from './pages/CreateProposalForm';
 import ProposalForm from './pages/ProposalForm';
 import ProposalFormEnd from './pages/ProposalFormEnd';
+import HomePage from './pages/HomePage';
 
 function App() {
 
@@ -32,6 +32,7 @@ function App() {
           <Route path='/createProposalForm' element={<CreateProposalForm />} />
           <Route path='/proposalForm' element={<ProposalForm />} />
           <Route path='/proposalFormEnd' element={<ProposalFormEnd />} />
+          <Route path='/homePage' element={<HomePage />} />
         </Routes>
       </div>
     </Router>

@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import styles from '../../styles/cardProfileInfo.module.css';
 import ButtonBg from '../../components/button/ButtonBg';
 
-const CardProfileInfo = () => {
+const CardProfileInfo = ({text}) => {
   return (
     <div className={styles.mainDiv}>
         <div className={styles.secondDiv}>
             <div className={styles.buttonDiv}>
-                <ButtonBg className={styles.buttons} to="/" text="Contratar" />
+                <ButtonBg className={styles.buttons} to="/" text={text} />
             </div>
             <div className={styles.infoDiv}>
                 <strong>Actividad</strong>
@@ -29,9 +29,6 @@ const CardProfileInfo = () => {
                     <p>Es miembro desde</p>
                     <span className={styles.span}>2015</span>
                 </div>
-            </div>
-            <div className={styles.buttonDiv}>
-                <ButtonBg className={styles.buttons} to="/" text="Contactar" />
             </div>
         </div>
     </div>
