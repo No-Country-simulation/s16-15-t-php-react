@@ -1,0 +1,43 @@
+.proposalFormContainer {
+  padding: 10px 30px;
+}
+
+.titleForm{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.formText{
+  font-size: 18px;
+  font-size: 500;
+}
+
+.buttonForm{
+  border: 1px solid #405ACF;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.ButtonFormContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.buttonGrey{
+  background-color: #E8EAEF;
+  border: none;
+}
+
+.buttonNextContainer{
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.buttonNextContainer button {
+  padding: 10px 20px;
+  width: 201px;
+  height: 48px;
+}

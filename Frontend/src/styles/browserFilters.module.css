@@ -35,6 +35,11 @@
   border-radius: 10px;
 }
 
+.buttonSquare:focus{
+  border: 1px solid #405ACF;
+  box-shadow: rgba(167, 231, 247, 0.02) 0px 1px 3px 0px, rgba(187, 210, 233, 0.15) 0px 0px 1px 1px;
+}
+
 .rangeContainer{
   display: flex;
   justify-content: space-between;

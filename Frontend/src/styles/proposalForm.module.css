@@ -1,0 +1,115 @@
+/* Proposal Form  */
+.proposalFormContainer{
+  display: flex;
+  max-height: 80vh;
+  display: flex;
+}
+
+.form{
+  /* width: 50%;  */
+  overflow-y: auto;
+  padding: 20px; 
+  box-sizing: border-box;
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.titleForm{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.labelForm{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 0 15px 0;
+}
+
+.inputProposal{
+  min-width: 779px;
+  border: 1px solid #8CABFB;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.proposalInput{
+  min-width: 779px;
+  min-height: 122px;
+  border: 1px solid #8CABFB;
+  outline: none;
+  border-radius: 10px;
+  resize: none;
+  padding: 5px 10px;
+}
+
+.fileUploadContainer {
+  max-width: 201px;
+  display: flex;
+  padding: 10px 10px 10px 10px; 
+  border: 1px solid #8CABFB;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.file {
+  width: 100%;
+  color: #666;
+  box-sizing: border-box;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.file::file-selector-button {
+  display: none; 
+}
+
+.buttonNextContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 32%;
+  width: 30%;
+} 
+
+.buttonNextContainer button{
+  width: 201px;
+  height: 48px;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C1C1C1; 
+  border-radius: 6px;
+}
+
+/* Proposal Form End */
+
+.buttonSquare{
+  border: 1px solid #8CABFB;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 10px 0 0;
+  padding: 15px;
+}
+
+.buttonSquare:focus{
+  border: 1px solid #405ACF;
+  box-shadow: rgba(167, 231, 247, 0.02) 0px 1px 3px 0px, rgba(187, 210, 233, 0.15) 0px 0px 1px 1px;
+}
+
+.inputProposalDate{
+  min-width: 381px;
+  border: 1px solid #8CABFB;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
