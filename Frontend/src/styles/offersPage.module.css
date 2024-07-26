@@ -1,0 +1,58 @@
+.pageTitle{
+    padding: 30px 20px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 18px 10px;
+}
+
+.infoCardOffer{
+    min-width: 415px;
+    height: 260px;
+    border: 1px solid #8CABFB;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.infoTitle{
+    font-size: 18px;
+    color:#404040;
+    font-weight: 600;
+    padding: 2px;
+}
+
+.info{
+    color: #404040;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoText{
+    font-size: 15px;
+    padding: 2px;
+    color: #404040;
+}
+  
+.OffersContainer {
+    /* temporario */
+    margin-left: 20px;
+}
+
+.buttonCreateOffer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonCreateOffer button {
+  width: 230px;
+  margin-bottom: 15px;
+}
