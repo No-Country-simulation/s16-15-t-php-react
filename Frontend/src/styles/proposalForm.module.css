@@ -45,10 +45,9 @@
 }
 
 .fileUploadContainer {
-  /* position: relative; */
   max-width: 201px;
   display: flex;
-  padding: 10px 40px 10px 10px; 
+  padding: 10px 10px 10px 10px; 
   border: 1px solid #8CABFB;
   border-radius: 5px;
   justify-content: space-evenly;
@@ -65,19 +64,6 @@
 .file::file-selector-button {
   display: none; 
 }
-/* 
-.file::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 24px; 
-  height: 24px; 
-  background-image: url('../assets/attach_file.svg'); 
-  background-size: cover;
-} */
-
 
 .buttonNextContainer{
   display: flex;
@@ -90,7 +76,6 @@
   width: 201px;
   height: 48px;
 }
-
 
 ::-webkit-scrollbar {
   width: 8px; 
@@ -113,4 +98,18 @@
   border-radius: 10px;
   margin: 10px 10px 0 0;
   padding: 15px;
+}
+
+.buttonSquare:focus{
+  border: 1px solid #405ACF;
+  box-shadow: rgba(167, 231, 247, 0.02) 0px 1px 3px 0px, rgba(187, 210, 233, 0.15) 0px 0px 1px 1px;
+}
+
+.inputProposalDate{
+  min-width: 381px;
+  border: 1px solid #8CABFB;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
 }

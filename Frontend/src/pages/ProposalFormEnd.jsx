@@ -41,12 +41,12 @@ function ProposalFormEnd() {
         </div>
         <div>
           <label className={styles.labelForm}>Fecha de finalización</label>
-          <input type="date" className={styles.inputProposal} />
+          <input type="date" className={styles.inputProposalDate} />
         </div>
       </section>
     </section>
     <section className={styles.buttonNextContainer}>
-      <ButtonBg text="Siguiente" to='/proposalForm' />
+      <ButtonBg text="Siguiente" />
     </section>
   </main>
   )
