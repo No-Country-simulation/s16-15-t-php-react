@@ -22,7 +22,7 @@
 .cardBut {
     width: 43px;
     height: 5px;
-    background-color: #FFFFFF;
+    background-color: #8CABFB;
     border-radius: 15px;
     margin-right: 4%;
     border: none;
@@ -30,5 +30,5 @@
 }
 
 .selectedBut {
-    background-color: #8CABFB;
+    background-color: #FFFFFF;
 }
