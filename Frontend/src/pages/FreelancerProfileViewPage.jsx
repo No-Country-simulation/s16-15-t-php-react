@@ -5,6 +5,7 @@ import profilePic from "../assets/profilePic.svg";
 import FreelancerCard from "../components/card/FreelancerCard";
 import CardProfileInfo from '../components/card/CardProfileInfo';
 import AccordionItemProfile from "../components/accordion/AccordionItemProfile";
+import OfferFormModal from '../components/form/OfferFormModal'; // Asegúrate de ajustar el path
 
 const FreelancerProfileViewPage = () => {
   const title = "Valentina Toro";
@@ -48,29 +49,15 @@ const FreelancerProfileViewPage = () => {
         </section>
       </div>
       <div className={styles.rightDiv}>
-        <div className={styles.buttonDiv} onClick={handleButtonClick}>
-          <CardProfileInfo text={buttonText} />
-        </div>
+        <CardProfileInfo
+          text={buttonText}
+          onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
+        />
       </div>
-      {isFormVisible && (
-        <div className={styles.overlay}>
-          <div className={styles.formContainer}>
-            <h2 className={styles.formTitle}>Formulario de Oferta</h2>
-            <form className={styles.form}>
-              <label className={styles.formLabel}>
-                Título:
-                <input className={styles.formInput} type="text" name="title" />
-              </label>
-              <label className={styles.formLabel}>
-                Descripción:
-                <textarea className={styles.formTextarea} name="description" />
-              </label>
-              <button className={styles.submitButton} type="submit">Enviar</button>
-              <button className={styles.closeButton} type="button" onClick={() => setIsFormVisible(false)}>Cerrar</button>
-            </form>
-          </div>
-        </div>
-      )}
+      <OfferFormModal
+        isVisible={isFormVisible}
+        onClose={() => setIsFormVisible(false)}
+      />
     </div>
   );
 }

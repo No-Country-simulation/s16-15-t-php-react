@@ -19,12 +19,7 @@
     width: 740px;
 }
 
-
-
-
-
-
-
+/* Overlay para oscurecer el fondo */
 .overlay {
     position: fixed;
     top: 0;
@@ -38,6 +33,7 @@
     z-index: 1000;
 }
 
+/* Contenedor del formulario centrado */
 .formContainer {
     background: #fff;
     padding: 20px;
@@ -46,6 +42,7 @@
     width: 400px; /* Ajusta el tamaño según sea necesario */
 }
 
+/* Estilos específicos para el formulario */
 .formTitle {
     margin-bottom: 20px;
 }
@@ -67,7 +64,7 @@
 }
 
 .formTextarea {
-    resize: vertical;
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
 }
 
 .submitButton {
