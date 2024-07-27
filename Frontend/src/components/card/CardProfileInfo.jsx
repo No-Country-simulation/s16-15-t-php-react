@@ -2,12 +2,20 @@ import React from 'react';
 import styles from '../../styles/cardProfileInfo.module.css';
 import ButtonBg from '../../components/button/ButtonBg';
 
-const CardProfileInfo = ({ text }) => {
+const CardProfileInfo = ({ text, onButtonClick }) => {
+  const handleClick = (e) => {
+    e.stopPropagation();
+    onButtonClick();
+  };
+
   return (
     <div className={styles.mainDiv}>
       <div className={styles.secondDiv}>
-        <div className={styles.buttonDiv}>
-          <ButtonBg className={styles.buttons} text={text} />
+        <div className={styles.buttonDiv} onClick={handleClick}> {/* Maneja el clic en el contenedor */}
+          <ButtonBg
+            className={styles.buttons}
+            text={text}
+          />
         </div>
         <div className={styles.infoDiv}>
           <strong>Actividad</strong>
@@ -31,7 +39,7 @@ const CardProfileInfo = ({ text }) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default CardProfileInfo;
