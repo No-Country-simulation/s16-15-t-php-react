@@ -17,6 +17,11 @@
   justify-content: space-between;
 }
 
+.btnTitleContainer h1 {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
 .btnTitleContainer button {
   width: 86px;
 }
@@ -32,3 +37,21 @@
   padding: 10px 0 10px;
 }
 
+.status{
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.aceptada{
+  color: #405ACF;
+}
+
+.enCurso{
+  color: #8CABFB;
+}
+
+.rechazada{
+  color: #CF4940;
+}

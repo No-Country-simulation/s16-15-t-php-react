@@ -31,16 +31,19 @@ const OffersPage = () => {
             title="Editora de videos"
             countryandprice="País: Uruguay  -  $300USD por semana"
             text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+            status="Aceptada"
         />
         <OfferProposalCard
             title="Guionista para videos y contenido para redes sociales"
             countryandprice="País: Mexico  -  $300USD por semana"
             text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+            status="En curso"
         />
         <OfferProposalCard 
             title="Redactora para posts de redes sociales en español/inglés"
             countryandprice="País: Colombia  -  $300USD por semana"
             text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+            status="Rechazada"
         />
       </section>
     </section>

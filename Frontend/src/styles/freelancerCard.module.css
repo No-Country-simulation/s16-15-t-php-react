@@ -17,7 +17,6 @@
 .tools {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .toolsButtons {
@@ -39,6 +38,10 @@
 
 .btnProfileContainer{
   padding-top: 15px;
+}
+
+.btnProfileContainer button{
+  width: 91px;
 }
 
 .name{
