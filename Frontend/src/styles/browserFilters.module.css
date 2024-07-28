@@ -36,8 +36,9 @@
 }
 
 .buttonSquare:focus{
-  border: 1px solid #405ACF;
-  box-shadow: rgba(167, 231, 247, 0.02) 0px 1px 3px 0px, rgba(187, 210, 233, 0.15) 0px 0px 1px 1px;
+  background-color: #405ACF;
+  color: #f1f1f1;
+  border: none;
 }
 
 .rangeContainer{

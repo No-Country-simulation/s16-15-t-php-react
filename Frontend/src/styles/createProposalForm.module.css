@@ -19,6 +19,12 @@
   padding: 10px 20px;
 }
 
+.buttonForm:focus{
+  background-color: #405ACF;
+  color: #f1f1f1;
+  border: none;
+}
+
 .ButtonFormContainer{
   display: flex;
   flex-wrap: wrap;
