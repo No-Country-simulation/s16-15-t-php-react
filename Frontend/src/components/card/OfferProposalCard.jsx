@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import ButtonGrey from "../button/ButtonGrey";
 import styles from "../../styles/offerProposalCard.module.css";
 
-const OfferProposalCard = ({ title, text, countryandprice, width = '740px', height = '208px' }) => {
+const OfferProposalCard = ({ title, text, countryandprice, width = '740px', height = '208px', ButtonBg }) => {
   const cardStyle = {
     width,
     height
@@ -11,7 +11,10 @@ const OfferProposalCard = ({ title, text, countryandprice, width = '740px', heig
   return (
     <article className={styles.cardOPcontainer} style={cardStyle}>
       <section>
-        <h1 className={styles.opTitle}>{title}</h1>
+        <div className={styles.btnTitleContainer}>
+          <h1 className={styles.opTitle}>{title}</h1>
+          {ButtonBg && <ButtonBg text="Contratar" />}
+        </div>
         <p className={styles.countryAndPrice}>{countryandprice}</p>
       </section>
       <section className={styles.buttonsSectionOp}>
@@ -31,7 +34,8 @@ OfferProposalCard.propTypes = {
   text: PropTypes.string,
   countryandprice: PropTypes.string,
   width: PropTypes.string,
-  height: PropTypes.string
+  height: PropTypes.string,
+  ButtonBg: PropTypes.elementType
 };
 
 export default OfferProposalCard;

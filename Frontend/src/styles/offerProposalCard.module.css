@@ -12,6 +12,15 @@
   font-weight: 600;
 }
 
+.btnTitleContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnTitleContainer button {
+  width: 86px;
+}
+
 .countryAndPrice {
   font-size: 15px;
   color: #404040;
@@ -22,3 +31,4 @@
   font-size: 14px;
   padding: 10px 0 10px;
 }
+
