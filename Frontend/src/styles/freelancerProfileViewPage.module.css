@@ -18,3 +18,75 @@
 .questionsList {
     width: 740px;
 }
+
+/* Overlay para oscurecer el fondo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenedor del formulario centrado */
+.formContainer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Estilos específicos para el formulario */
+.formTitle {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel {
+    margin-bottom: 10px;
+}
+
+.formInput, .formTextarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formTextarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+.submitButton {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.closeButton {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+}
+
+.submitButton:hover, .closeButton:hover {
+    opacity: 0.9;
+}
