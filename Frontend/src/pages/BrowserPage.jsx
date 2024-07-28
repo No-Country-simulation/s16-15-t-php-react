@@ -5,6 +5,7 @@ import stylesProps from "../styles/freelancerCard.module.css";
 import profilePic from "../assets/profilePic.svg";
 import { useState } from "react";
 import OfferProposalCard from "../components/card/OfferProposalCard";
+import ButtonBg from "../components/button/ButtonBg";
 
 function BrowserPage() {
   const [activeTab, setActiveTab] = useState('freelancers');
@@ -53,17 +54,20 @@ function BrowserPage() {
                 title="Creador de contenido de TikTok y experto en crecimiento y participación"
                 countryandprice="País: Colombia  -  $300USD por semana"
                 text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+                ButtonBg={ButtonBg}
               />
               <OfferProposalCard
                 title="Creador de contenido para redes sociales"
                 countryandprice="País: Mexico  -  $300USD por semana"
                 text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
-            />
+                ButtonBg={ButtonBg}
+              />
               <OfferProposalCard 
                 title="Creador de contenido de TikTok y experto en crecimiento y participación"
                 countryandprice="País: Colombia  -  $300USD por semana"
                 text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
-        />
+                ButtonBg={ButtonBg}
+              />
             </>
           )}
           {activeTab === 'propuestas' && (

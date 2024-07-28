@@ -6,7 +6,8 @@ const NavSelect = () => {
 
     const options = [
       {label: "Freelancer", value: "freelancer"},
-      {label: "Ofertas", vale: "ofertas"}
+      {label: "Ofertas", value: "ofertas"},
+      {label: "Propuestas", value: "propuestas"}
     ]
 
     const [selectedOption, setSelectedOption] = useState(options[0].label);
