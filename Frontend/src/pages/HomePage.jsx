@@ -6,12 +6,21 @@ import OfferProposalCard from "../components/card/OfferProposalCard";
 import Footer from "../components/footer/Footer";
 
 const HomePage = () => {
+  const freelancerProfile = false;
+  const employerProfile = true;
+
+  const name = 'Lucía Guerrero'
+  const job = 'Diseñadora gráfica'
+  const activityNumber = '15'
+  const infoNumber = '12'
+
+
   return (
     <div className={styles.mainDiv}>
       <div className={styles.firstDiv}>
         <CardHomePage />
         <div className={styles.infoDiv}>
-          <CardHomePageInfo />
+          <CardHomePageInfo name={name} job={job} employer={employerProfile} freelancer={freelancerProfile} activityNumber={activityNumber} infoNumber={infoNumber}/>
         </div>
       </div>
       <div className={styles.secondDiv}>
