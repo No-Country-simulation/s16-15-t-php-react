@@ -12,8 +12,8 @@ const FreelancerProfileViewPage = () => {
   const name = "Creadora de contenido | Experta en Marketing Digital";
   const text = "Soy una apasionada creadora de contenido y experta en marketing digital. Con una amplia experiencia en la industria, me especializo en desarrollar estrategias innovadoras y efectivas para potenciar la presencia online de marcas, creando así un contenido más fiel al usuario. ¡Contáctame para saber más de mí!";
   
-  const mainUserLogged = true;
-  const otherUserLogged = false;
+  const mainUserLogged = false;
+  const otherUserLogged = true;
   
   const [buttonText, setButtonText] = useState("");
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -38,6 +38,13 @@ const FreelancerProfileViewPage = () => {
     <div className={styles.mainDiv}>
       <div className={styles.leftDiv}>
         <FreelancerCard className={stylesProps} showTools={true} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
+        
+      </div>
+      <div className={styles.rightDiv}>
+        <CardProfileInfo
+          text={buttonText}
+          onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
+        />
         <section className={styles.FAQsSection}>
           <ul className={styles.questionsList}>
             <AccordionItemProfile clickable={true} question="Certificados (15)" />
@@ -47,12 +54,6 @@ const FreelancerProfileViewPage = () => {
             <AccordionItemProfile question="Precio: $45USD" />
           </ul>
         </section>
-      </div>
-      <div className={styles.rightDiv}>
-        <CardProfileInfo
-          text={buttonText}
-          onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
-        />
       </div>
       <OfferFormModal
         isVisible={isFormVisible}
