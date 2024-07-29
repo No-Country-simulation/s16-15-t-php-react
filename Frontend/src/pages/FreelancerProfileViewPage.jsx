@@ -5,7 +5,9 @@ import profilePic from "../assets/profilePic.svg";
 import FreelancerCard from "../components/card/FreelancerCard";
 import CardProfileInfo from '../components/card/CardProfileInfo';
 import AccordionItemProfile from "../components/accordion/AccordionItemProfile";
-import OfferFormModal from '../components/form/OfferFormModal'; // Asegúrate de ajustar el path
+import OfferFormModal from '../components/form/OfferFormModal';
+import OfferProposalCard from "../components/card/OfferProposalCard";
+import ButtonBg from "../components/button/ButtonBg";
 
 const FreelancerProfileViewPage = () => {
   const title = "Valentina Toro";
@@ -38,7 +40,12 @@ const FreelancerProfileViewPage = () => {
     <div className={styles.mainDiv}>
       <div className={styles.leftDiv}>
         <FreelancerCard className={stylesProps} showTools={true} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
-        
+        <OfferProposalCard 
+                title="Creador de contenido de TikTok y experto en crecimiento y participación"
+                countryandprice="País: Colombia  -  $300USD por semana"
+                text="Soy entusiasta de TikTok con un don para crear contenido atractivo y viral. Tengo un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+                ButtonBg={ButtonBg}
+            />
       </div>
       <div className={styles.rightDiv}>
         <CardProfileInfo
