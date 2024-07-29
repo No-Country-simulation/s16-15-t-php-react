@@ -2,15 +2,25 @@ import React, { useState } from 'react';
 import styles from '../../styles/cardHomePage.module.css';
 import img from '../../assets/homePage.svg';
 
-const CardHomePage = () => {
+const CardHomePage = ({freelancer, employer}) => {
   const [textIndex, setTextIndex] = useState(0);
   const [selectedButton, setSelectedButton] = useState(0);
 
-  const texts = [
-    "Explora miles de oportunidades freelance en un solo lugar",
-    "Descubre oportunidades únicas para tu carrera freelance",
-    "Encuentra el trabajo freelance perfecto para ti ajustándolo a tus necesidades",
-  ];
+  let texts = []
+
+  if (freelancer) {
+    texts = [
+      "Explora miles de oportunidades freelance en un solo lugar",
+      "Descubre oportunidades únicas para tu carrera freelance",
+      "Encuentra el trabajo freelance perfecto para ti ajustándolo a tus necesidades",
+    ];
+  } else if (employer) {
+    texts = [
+      "Encuentra el freelancer ideal para tu negocio o emprendimiento",
+      "Tu solución para encontrar capital calificado a solo un click",
+      "Fácil, rápido y sencillo. Valoramos tu tiempo y comodidad",
+    ];
+  }
 
   const handleButtonClick = (index) => {
     setTextIndex(index);
