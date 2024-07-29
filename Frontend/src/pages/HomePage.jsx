@@ -4,6 +4,7 @@ import CardHomePage from '../components/card/CardHomePage';
 import CardHomePageInfo from '../components/card/CardHomePageInfo';
 import OfferProposalCard from "../components/card/OfferProposalCard";
 import Footer from "../components/footer/Footer";
+import img from "../assets/profilebutton.svg"
 
 const HomePage = () => {
   const freelancerProfile = false;
@@ -20,7 +21,7 @@ const HomePage = () => {
       <div className={styles.firstDiv}>
         <CardHomePage />
         <div className={styles.infoDiv}>
-          <CardHomePageInfo name={name} job={job} employer={employerProfile} freelancer={freelancerProfile} activityNumber={activityNumber} infoNumber={infoNumber}/>
+          <CardHomePageInfo img={img} name={name} job={job} employer={employerProfile} freelancer={freelancerProfile} activityNumber={activityNumber} infoNumber={infoNumber}/>
         </div>
       </div>
       <div className={styles.secondDiv}>

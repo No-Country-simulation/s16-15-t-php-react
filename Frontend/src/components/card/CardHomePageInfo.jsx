@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from '../../styles/cardHomePageInfo.module.css';
 import ButtonBg from '../../components/button/ButtonBg';
-import img from "../../assets/profilebutton.svg"
 
-const CardHomePageInfo = ({employer, freelancer, name, job, activityNumber, infoNumber}) => {
+const CardHomePageInfo = ({employer, freelancer, img, name, job, activityNumber, infoNumber}) => {
     let activityText = '';
     let activityNum = '';
     let infoText = '';
