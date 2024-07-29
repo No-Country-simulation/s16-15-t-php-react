@@ -1,29 +1,44 @@
 import React from 'react'
 import styles from '../../styles/cardHomePageInfo.module.css';
 import ButtonBg from '../../components/button/ButtonBg';
-import img from "../../assets/profilebutton.svg"
 
-const CardHomePageInfo = () => {
+const CardHomePageInfo = ({employer, freelancer, img, name, job, activityNumber, infoNumber}) => {
+    let activityText = '';
+    let activityNum = '';
+    let infoText = '';
+    let infoNum = '';
+
+    if (freelancer) {
+        activityText = 'Proyectos actuales';
+        activityNum = activityNumber
+        infoText = 'Certificados de cumplimiento'
+        infoNum = infoNumber
+    } else if (employer) {
+        activityText = 'Vistas actuales';
+        activityNum = activityNumber
+        infoText = 'Contactos actuales'
+        infoNum = infoNumber
+    }
   return (
     <div className={styles.mainDiv}>
         <div className={styles.secondDiv}>
             <div className={styles.buttonDiv}>
                 <img src={img} className={styles.profileImg}></img>
                 <div className={styles.nameDiv}>
-                    <strong className={styles.strongTxt}>Lucía Guerrero</strong>
-                    <span>Diseñadora gráfica</span>
+                    <strong className={styles.strongTxt}>{name}</strong>
+                    <span>{job}</span>
                 </div>
             </div>
             <div className={styles.infoDiv}>
                 <strong>Actividad</strong>
                 <div className={styles.lineInfo}>
-                    <p className={styles.pTag}>Proyectos actuales</p>
-                    <span className={styles.span}>15</span>
+                    <p className={styles.pTag}>{activityText}</p>
+                    <span className={styles.span}>{activityNum}</span>
                 </div>
                 <strong>Información</strong>
                 <div className={styles.lineInfo}>
-                    <p className={styles.pTag}>Certificados de cumplimiento</p>
-                    <span className={styles.span}>15</span>
+                    <p className={styles.pTag}>{infoText}</p>
+                    <span className={styles.span}>{infoNum}</span>
                 </div>
             </div>
         </div>

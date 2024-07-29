@@ -5,15 +5,17 @@ import profilePic from "../assets/profilePic.svg";
 import FreelancerCard from "../components/card/FreelancerCard";
 import CardProfileInfo from '../components/card/CardProfileInfo';
 import AccordionItemProfile from "../components/accordion/AccordionItemProfile";
-import OfferFormModal from '../components/form/OfferFormModal'; // Asegúrate de ajustar el path
+import OfferFormModal from '../components/form/OfferFormModal';
+import OfferProposalCard from "../components/card/OfferProposalCard";
+import ButtonBg from "../components/button/ButtonBg";
 
 const FreelancerProfileViewPage = () => {
   const title = "Valentina Toro";
   const name = "Creadora de contenido | Experta en Marketing Digital";
   const text = "Soy una apasionada creadora de contenido y experta en marketing digital. Con una amplia experiencia en la industria, me especializo en desarrollar estrategias innovadoras y efectivas para potenciar la presencia online de marcas, creando así un contenido más fiel al usuario. ¡Contáctame para saber más de mí!";
   
-  const mainUserLogged = true;
-  const otherUserLogged = false;
+  const mainUserLogged = false;
+  const otherUserLogged = true;
   
   const [buttonText, setButtonText] = useState("");
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -38,6 +40,24 @@ const FreelancerProfileViewPage = () => {
     <div className={styles.mainDiv}>
       <div className={styles.leftDiv}>
         <FreelancerCard className={stylesProps} showTools={true} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
+        <div className={styles.offerDiv}>
+          <strong>Ofertas de Valentina Toro</strong>
+          <div className={styles.offerTitle}>
+            <OfferProposalCard 
+              title="Creador de contenido de TikTok y experto en crecimiento y participación"
+              countryandprice="País: Colombia  -  $300USD por semana"
+              text="Soy entusiasta de TikTok con un don para crear contenido atractivo y viral. Tengo un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+              ButtonBg={ButtonBg}
+            />
+          </div>
+          
+        </div>
+      </div>
+      <div className={styles.rightDiv}>
+        <CardProfileInfo
+          text={buttonText}
+          onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
+        />
         <section className={styles.FAQsSection}>
           <ul className={styles.questionsList}>
             <AccordionItemProfile clickable={true} question="Certificados (15)" />
@@ -47,12 +67,6 @@ const FreelancerProfileViewPage = () => {
             <AccordionItemProfile question="Precio: $45USD" />
           </ul>
         </section>
-      </div>
-      <div className={styles.rightDiv}>
-        <CardProfileInfo
-          text={buttonText}
-          onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
-        />
       </div>
       <OfferFormModal
         isVisible={isFormVisible}

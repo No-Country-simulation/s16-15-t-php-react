@@ -7,6 +7,7 @@ import RegisterFormPage from './pages/RegisterFormPage';
 import FirstQuestionRegisterPage from './pages/FirstQuestionRegisterPage';
 import BrowserPage from './pages/BrowserPage';
 import FreelancerProfileViewPage from './pages/FreelancerProfileViewPage';
+import EmployerProfileViewPage from './pages/EmployerProfileViewPage';
 import ProposalsPage from './pages/ProposalsPage';
 import OffersPage from './pages/OffersPage';
 import CreateProposalForm from './pages/CreateProposalForm';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/firstQuestionregister' element={<FirstQuestionRegisterPage />} />
           <Route path='/browser' element={<BrowserPage />} />
           <Route path='/freelancerProfileView' element={<FreelancerProfileViewPage />} />
+          <Route path='/employerProfileView' element={<EmployerProfileViewPage />} />
           <Route path='/proposals' element={<ProposalsPage />} />
           <Route path='/offers' element={<OffersPage />} />
           <Route path='/createProposalForm' element={<CreateProposalForm />} />
