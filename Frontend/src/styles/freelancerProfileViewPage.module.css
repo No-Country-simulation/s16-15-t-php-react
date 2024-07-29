@@ -13,7 +13,21 @@
 .rightDiv {
     width: 35%;
     margin-right: 5%;
+    margin-bottom: 1%;
 }
+
+.offerDiv {
+    margin-top: 3%;
+}
+
+.offerDiv strong {
+    margin-left: 2%;
+}
+
+.offerTitle {
+    margin-top: 2%;
+}
+
 
 .questionsList {
     width: 450px;

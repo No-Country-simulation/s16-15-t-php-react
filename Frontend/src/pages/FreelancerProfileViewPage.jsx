@@ -40,12 +40,18 @@ const FreelancerProfileViewPage = () => {
     <div className={styles.mainDiv}>
       <div className={styles.leftDiv}>
         <FreelancerCard className={stylesProps} showTools={true} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
-        <OfferProposalCard 
-                title="Creador de contenido de TikTok y experto en crecimiento y participación"
-                countryandprice="País: Colombia  -  $300USD por semana"
-                text="Soy entusiasta de TikTok con un don para crear contenido atractivo y viral. Tengo un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
-                ButtonBg={ButtonBg}
+        <div className={styles.offerDiv}>
+          <strong>Ofertas de Valentina Toro</strong>
+          <div className={styles.offerTitle}>
+            <OfferProposalCard 
+              title="Creador de contenido de TikTok y experto en crecimiento y participación"
+              countryandprice="País: Colombia  -  $300USD por semana"
+              text="Soy entusiasta de TikTok con un don para crear contenido atractivo y viral. Tengo un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+              ButtonBg={ButtonBg}
             />
+          </div>
+          
+        </div>
       </div>
       <div className={styles.rightDiv}>
         <CardProfileInfo
