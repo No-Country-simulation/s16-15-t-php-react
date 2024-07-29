@@ -13,6 +13,7 @@ import CreateProposalForm from './pages/CreateProposalForm';
 import ProposalForm from './pages/ProposalForm';
 import ProposalFormEnd from './pages/ProposalFormEnd';
 import HomePage from './pages/HomePage';
+import HiringForm from './pages/HiringForm';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/proposalForm' element={<ProposalForm />} />
           <Route path='/proposalFormEnd' element={<ProposalFormEnd />} />
           <Route path='/homePage' element={<HomePage />} />
+          <Route path='/hiringForm' element={<HiringForm />} />
         </Routes>
       </div>
     </Router>
