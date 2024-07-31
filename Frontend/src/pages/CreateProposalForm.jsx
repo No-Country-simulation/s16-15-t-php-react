@@ -4,7 +4,7 @@ import ButtonBg from '../components/button/ButtonBg';
 
 const CreateProposalForm = () => {
 
-  // temporario
+  
   const ButtonForm = ({text, className}) => {
     return <button className={`${styles.buttonForm} ${className}`}>{text}</button>
   };
@@ -13,6 +13,8 @@ const CreateProposalForm = () => {
     text: PropTypes.string,
     className: PropTypes.string
   }
+
+  
 
   return (
     <main className={styles.proposalFormContainer}>

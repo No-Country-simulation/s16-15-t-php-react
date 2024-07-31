@@ -3,7 +3,7 @@ import ButtonGrey from '../button/ButtonGrey';
 import styles from '../../styles/freelancerCard.module.css';
 import ButtonBg from '../button/ButtonBg';
 
-const FreelancerCard = ({ img, title, name, text, className, showTools, showProfileButton }) => {
+const FreelancerCard = ({ img, title, name, text, className, showTools, toolsText1, toolsText2, toolsText3, showProfileButton }) => {
   return (
     <article className={`${styles.cardContainer} ${className.cardContainer}`}>
       <div className={`${styles.imgContainer} ${className.imgContainer}`}>
@@ -21,14 +21,7 @@ const FreelancerCard = ({ img, title, name, text, className, showTools, showProf
             </div>
           )}
         </section>
-        <section className={`${styles.buttonSection} ${className.buttonSection}`}>
-          <ButtonGrey 
-            text="Marketing digital"/>
-          <ButtonGrey 
-            text="Creador de contenido"/>
-          <ButtonGrey 
-            text="Creador UGC"/>
-        </section>
+        
         <section className={`${styles.textSection} ${className.textSection}`}>
           <p className={`${styles.text} ${className.text}`}>{text}</p>
         </section>
@@ -37,11 +30,11 @@ const FreelancerCard = ({ img, title, name, text, className, showTools, showProf
             <p className={styles.toolsText}>Herramientas:</p>
             <div className={styles.toolsButtons}>
               <ButtonGrey 
-                text="Marketing digital"/>
+                text="SQL "/>
               <ButtonGrey 
-                text="Creador de contenido"/>
+                text="SAS "/>
               <ButtonGrey 
-                text="Creador UGC"/>
+                text="Ruby"/>
             </div>
           </section>
         )}

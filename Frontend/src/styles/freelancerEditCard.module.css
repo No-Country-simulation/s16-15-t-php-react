@@ -1,0 +1,61 @@
+.cardContainer{
+    border: 1px solid #8CABFB;
+    width: 740px;
+    height: 208px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .toolsText {
+    font-size: 13px;
+  }
+  
+  .tools {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .toolsButtons {
+    width: 100%;
+    margin-left: 5%;
+  }
+  
+  .titleSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 15px;
+  }
+  
+  .btnProfileContainer{
+    padding-top: 15px;
+  }
+  
+  .btnProfileContainer button{
+    width: 91px;
+  }
+  
+  .name{
+    font-size: 15px;
+  }
+  
+  .text{
+    font-size: 14px;
+    text-align: left;
+    width: 575px;
+    padding-top: 10px;
+  }
+
+  .editImg {
+    height: 30px;
+    width: 30px;
+  }

@@ -26,7 +26,7 @@ function AccordionItemFAQs({ question }) {
         ref={contentRef}
         style={{ maxHeight }}
         className={`${styles.answer} ${isOpen ? styles.answerOpen : ''}`}>
-        <p>Respuesta</p>
+        <p>GitHub: https://github.com/No-Country-simulation/s16-15-t-php-react</p>
       </div>
     </li>
   )

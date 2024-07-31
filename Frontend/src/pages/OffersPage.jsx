@@ -6,13 +6,10 @@ const OffersPage = () => {
   return (
     <main>
     <section className={styles.pageTitle}>
-      <h2 className={styles.title}>Mis Ofertas</h2>
+      <h2 className={styles.title}>Mis Contratos </h2>
     </section>
     <section className={styles.mainContainer}>
       <article className={styles.infoCardOffer}>
-        <div className={styles.buttonCreateOffer}>
-          <ButtonBg text="Crear oferta" />
-        </div>
         <p className={styles.infoTitle}>Actividad</p>
         <div className={styles.info}>
           <p className={styles.infoText}>Vistas actuales</p>
@@ -27,23 +24,41 @@ const OffersPage = () => {
         <p className={styles.infoText}>Cuentas con 5 proyectos actualmente</p>
       </article>
       <section className={styles.offersContainer}>
-        <OfferProposalCard 
-            title="Editora de videos"
-            countryandprice="País: Uruguay  -  $300USD por semana"
-            text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
-            status="Aceptada"
+      <OfferProposalCard
+            title="Diseñador Creativo y Versátil para Proyecto Web"
+            countryandprice="País: Venezuela  -  $400USD por semana"
+            text="Estamos en busca de un diseñador talentoso y creativo para colaborar en el desarrollo de nuestro próximo proyecto web. Nuestro objetivo es crear una plataforma innovadora y visualmente impactante que ofrezca una experiencia de usuario excepcional y refleje la identidad de nuestra marca."
+            toolsText1="Adobe XD"
+            toolsText2="Figma"
+            toolsText3="Sketch"
+            status="Pendiente"
         />
         <OfferProposalCard
-            title="Guionista para videos y contenido para redes sociales"
-            countryandprice="País: Mexico  -  $300USD por semana"
-            text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+            title="Diseñador Creativo y Versátil para Proyecto Web"
+            countryandprice="País: Venezuela  -  $400USD por semana"
+            text="Estamos en busca de un diseñador talentoso y creativo para colaborar en el desarrollo de nuestro próximo proyecto web. Nuestro objetivo es crear una plataforma innovadora y visualmente impactante que ofrezca una experiencia de usuario excepcional y refleje la identidad de nuestra marca."
+            toolsText1="Adobe XD"
+            toolsText2="Figma"
+            toolsText3="Sketch"
             status="En curso"
         />
         <OfferProposalCard 
-            title="Redactora para posts de redes sociales en español/inglés"
-            countryandprice="País: Colombia  -  $300USD por semana"
-            text="Buscamos un entusiasta de TikTok con un don para crear contenido atractivo y viral. Si tienes un historial comprobado de creación de contenido, crecimiento orgánico de cuentas de TikTok y participación de audiencias, ¡trabajemos juntos!"
+            title="Programador Frontend Experto para Proyecto Web"
+            countryandprice="País: Perú  -  $200USD por semana"
+            text="Estamos en búsqueda de un programador frontend altamente calificado para desarrollar y optimizar la interfaz de nuestro sitio web. Queremos crear una experiencia de usuario fluida y atractiva, con un enfoque en el diseño responsivo y la eficiencia del rendimiento."
+            toolsText1="VS Code"
+            toolsText2="Webpack"
+            toolsText3="Bootstrap"
             status="Rechazada"
+        />
+        <OfferProposalCard 
+            title="Creador de Contenido para Redes Sociales Creativo y Experimentado"
+            countryandprice="País: Uruguay  -  $300USD por semana"
+            text="Queremos una persona con habilidades excepcionales en la creación de contenido visual y escrito que pueda ayudar a elevar nuestra marca y conectar efectivamente con nuestra audiencia."
+            toolsText1="Canva"
+            toolsText2="Hootsuite"
+            toolsText3="Adobe Spark"
+            status="Finalizada"
         />
       </section>
     </section>

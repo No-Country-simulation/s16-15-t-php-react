@@ -10,12 +10,18 @@
   box-sizing: border-box;
   padding: 30px;
   flex-grow: 1;
+  
+}
+
+.formContainer {
+  
 }
 
 .titleForm{
   font-size: 23px;
   font-weight: 600;
   padding: 20px  0 20px;
+  
 }
 
 .buttonNextContainer{

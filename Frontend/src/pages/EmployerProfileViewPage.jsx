@@ -38,7 +38,7 @@ const EmployerProfileViewPage = () => {
     return (
         <div className={styles.mainDiv}>
           <div className={styles.leftDiv}>
-            <FreelancerCard className={stylesProps} showTools={true} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
+            <FreelancerCard className={stylesProps} showTools={false} showProfileButton={false} img={profilePic} title={title} name={name} text={text} />
             <div className={styles.offerDiv}>
               <strong>Propuestas actuales</strong>
               <div className={styles.offerTitle}>
@@ -46,6 +46,9 @@ const EmployerProfileViewPage = () => {
                   title="¡Estamos en búsqueda de Analista de datos remoto!"
                   countryandprice="País: Colombia  -  $300USD por semana"
                   text="Tareas:👉 Analizar y optimizar las metricas para mejorar el rendimiento y conversiones 👉 Monitorear y reportar el desempeño de las tiendas online y campañas publicitarias"
+                  toolsText1="Analista de datos"
+                toolsText2="Data entry"
+                toolsText3="Business Intelligence"
                 />
               </div>
               
@@ -54,15 +57,13 @@ const EmployerProfileViewPage = () => {
           <div className={styles.rightDiv}>
             <CardProfileInfo
               text={buttonText}
-              onButtonClick={handleButtonClick} // Llama a handleButtonClick cuando se hace clic
+              onButtonClick={handleButtonClick} 
             />
             <section className={styles.FAQsSection}>
               <ul className={styles.questionsList}>
-                <AccordionItemProfile clickable={true} question="Certificados (15)" />
-                <AccordionItemProfile question="Idioma: inglés avanzado" />
+                <AccordionItemProfile clickable={true} question="Trabajos contratados (3)" />
                 <AccordionItemProfile question="América del Sur y Central" />
-                <AccordionItemProfile clickable={true} question="Portfolio" />
-                <AccordionItemProfile question="Precio: $45USD" />
+                <AccordionItemProfile clickable={true} question="Enlaces de contacto" />
               </ul>
             </section>
           </div>
