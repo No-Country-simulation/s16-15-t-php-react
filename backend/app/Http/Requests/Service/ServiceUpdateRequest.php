@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Service;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Models\Service;
 
 class ServiceUpdateRequest extends FormRequest
 {
@@ -11,7 +12,9 @@ class ServiceUpdateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        if(auth()->check())
+            return Service::find(auth()->id());
+        return false;
     }
 
     /**

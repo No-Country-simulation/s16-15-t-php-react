@@ -10,11 +10,20 @@ use App\Models\Tool;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+use Spatie\QueryBuilder\QueryBuilder;
+
 class ToolController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:sanctum')->except('index','show');
+    }
     public function index(Request $request): ToolCollection
     {
-        $tools = Tool::all();
+        $tools = QueryBuilder::for(Tool::class)
+            ->allowedFilters('nombre')
+            ->allowedSorts('id','nombre')
+            ->get();
 
         return new ToolCollection($tools);
     }

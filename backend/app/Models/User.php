@@ -46,4 +46,31 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function tools(){
+        return $this->belongsToMany(Tool::class, 'tool_user', 'user_id', 'tool_id');
+    }
+
+    public function services(){
+        return $this->hasMany(Service::class);
+    }
+
+    public function typeuser(){
+        return [
+            'administrador',
+            'empleador',
+            'freelancer'
+        ][$this->id_typeuser];
+    }
+    public function offers(){
+        return $this->hasMany(Offer::class);
+    }
+
+    public function messages(){
+        return $this->hasMany(Message::class);
+    }
+
+    public function languages(){
+        return $this->hasMany(Language_User::class, 'user_id');
+    }
 }

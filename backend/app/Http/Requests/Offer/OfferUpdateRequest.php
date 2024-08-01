@@ -3,7 +3,7 @@
 namespace App\Http\Requests\Offer;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use App\Models\Offer;
 class OfferUpdateRequest extends FormRequest
 {
     /**
@@ -11,7 +11,9 @@ class OfferUpdateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        if(auth()->check())
+            return auth()->user() &&  Offer::where('user:_cliente_id',auth()->id())->orWhere('user:_freelancer_id', auth()->id())->count();
+        return false;
     }
 
     /**
@@ -23,8 +25,8 @@ class OfferUpdateRequest extends FormRequest
             'presupuesto' => ['required', 'integer', 'gt:0'],
             'fecha_limite' => ['required'],
             'detalles' => ['required', 'string'],
-            'user:_cliente_id' => ['required', 'integer', 'exists:App\Models\Users,id'],
-            'user:_freelancer_id' => ['required', 'integer', 'exists:App\Models\Users,id'],
+            'user:_cliente_id' => ['required', 'integer', 'exists:users,id'],
+            'user:_freelancer_id' => ['required', 'integer', 'exists:users,id'],
         ];
     }
 }

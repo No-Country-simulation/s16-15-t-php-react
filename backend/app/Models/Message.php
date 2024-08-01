@@ -32,9 +32,9 @@ class Message extends Model
         'offer_id' => 'integer',
     ];
 
-    public function app\Models\User(): BelongsTo
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(App\Models\User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function offer(): BelongsTo

@@ -42,12 +42,12 @@ class Offer extends Model
 
     public function client(): BelongsTo
     {
-        return $this->belongsTo(App\Models\User::class);
+        return $this->belongsTo(User::class, 'user:client_id');
     }
 
     public function freelancer(): BelongsTo
     {
-        return $this->belongsTo(App\Models\User::class);
+        return $this->belongsTo(User::class, 'user:freelancer_id');
     }
 
     public function messages(): HasMany

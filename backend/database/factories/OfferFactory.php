@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use App\Models\App\Models\User;
+use App\Models\User;
 use App\Models\Offer;
 
 class OfferFactory extends Factory
@@ -26,8 +26,8 @@ class OfferFactory extends Factory
             'fecha_limite' => $this->faker->dateTime(),
             'detalles' => $this->faker->text(),
             'active' => $this->faker->boolean(),
-            'user:client_id' => App\Models\User::factory(),
-            'user:freelancer_id' => App\Models\User::factory(),
+            'user:client_id' => User::factory(),
+            'user:freelancer_id' => User::factory(),
         ];
     }
 }

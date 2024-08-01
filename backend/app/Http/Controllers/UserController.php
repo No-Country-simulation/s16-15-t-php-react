@@ -9,7 +9,10 @@ use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\User\StoreUserRequest;
 use App\Http\Requests\User\UpdateUserRequest;
 use App\Http\Resources\User\UserResource;
+use App\Http\Resources\User\UserCollection;
 use App\Models\User;
+
+use Spatie\QueryBuilder\QueryBuilder;
 
 class UserController extends Controller
 {
@@ -18,8 +21,12 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        $users = User::paginate()->withQueryString();
-        return $users;
+        $users = QueryBuilder::for(User::class)
+            ->allowedFilters('nombre', 'email', 'id_typeuser', 'telefono', 'ubicacion', 'certificados')
+            ->allowedSorts('id','nombre', 'email', 'id_typeuser', 'telefono', 'ubicacion', 'certificados')
+            ->paginate()
+            ->withQueryString();
+        return new UserCollection($users);
     }
 
     /**
@@ -49,6 +56,7 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, User $user)
     {
         $data = $request->validated();
+        return dd($data);
         $data['password'] = Hash::make($data['password']);
         $user->update($data);
 
@@ -61,6 +69,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+
 
         return response()->noContent();
     }

@@ -10,11 +10,19 @@ use App\Models\Finished;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+use Spatie\QueryBuilder\QueryBuilder;
+
 class FinishedController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:sanctum')
+    }
     public function index(Request $request): FinishedCollection
     {
-        $finisheds = Finished::all();
+        $finisheds = QueryBuilder::for(Finished::class)
+            ->allowedFilters('offer_id','employee_score', 'freelancer_score', 'was_completed')
+            ->paginate()->withQueryString();
 
         return new FinishedCollection($finisheds);
     }

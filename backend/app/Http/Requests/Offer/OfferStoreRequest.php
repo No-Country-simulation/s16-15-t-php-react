@@ -11,7 +11,7 @@ class OfferStoreRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return auth()->check();
     }
 
     /**
@@ -20,11 +20,11 @@ class OfferStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'presupuesto' => ['required', 'integer', 'gt:0'],
+            'presupuesto' => ['required', 'integer'],
             'fecha_limite' => ['required'],
             'detalles' => ['required', 'string'],
-            'user:_cliente_id' => ['required', 'integer', 'exists:App\Models\Users,id'],
-            'user:_freelancer_id' => ['required', 'integer', 'exists:App\Models\Users,id'],
+            'user:_cliente_id' => ['required', 'integer', 'exists:users,id'],
+            'user:_freelancer_id' => ['required', 'integer', 'exists:users,id'],
         ];
     }
 }

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/users', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -22,7 +22,7 @@ Route::middleware('guest')->post('/auth', [App\Http\Controllers\AuthController::
 
 Route::middleware('auth:sanctum')->delete('/auth', [App\Http\Controllers\AuthController::class, 'destroy']);
 
-Route::apiResource('user', App\Http\Controllers\UserController::class);
+Route::apiResource('users', App\Http\Controllers\UserController::class);
 Route::apiResource('services', App\Http\Controllers\ServiceController::class);
 Route::apiResource('categories', App\Http\Controllers\CategoryController::class);
 Route::apiResource('messages', App\Http\Controllers\MessageController::class);

@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use App\Casts\Money;
 
 class Service extends Model
 {
@@ -31,17 +32,18 @@ class Service extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'precio_por_hora' => 'integer',
+        'precio_por_hora' => Money::class,
         'user_id' => 'integer',
     ];
 
-    public function categories(): HasMany
+
+    public function categories()
     {
-        return $this->hasMany(Category::class);
+        return $this->belongsToMany(Category::class);
     }
 
-    public function app\Models\User(): BelongsTo
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(App\Models\User::class);
+        return $this->belongsTo(User::class);
     }
 }

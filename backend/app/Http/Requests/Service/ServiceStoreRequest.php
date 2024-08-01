@@ -11,7 +11,8 @@ class ServiceStoreRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return true;
+        //dd(auth()->check());
+        return auth()->check();
     }
 
     /**
@@ -23,8 +24,9 @@ class ServiceStoreRequest extends FormRequest
             'description' => ['required', 'string'],
             'external_portfolio' => ['nullable', 'string'],
             'experiencia' => ['required', 'string'],
-            'precio_por_hora' => ['required', 'integer', 'gt:0'],
+            'precio_por_hora' => ['required'],
             'user_id' => ['required', 'integer', 'exists:users,id'],
+            'category_id' => ['integer']
         ];
     }
 }

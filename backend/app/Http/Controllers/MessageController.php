@@ -10,11 +10,16 @@ use App\Models\Message;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+use Spatie\QueryBuilder\QueryBuilder;
+
 class MessageController extends Controller
 {
     public function index(Request $request): MessageCollection
     {
-        $messages = Message::all();
+        $messages = QueryBuilder::for(Message::class)
+            ->allowedFilters('offer_id','user:client_id','user:freelancer_id','active')
+            ->where('user_id', auth()->id())
+            ->paginate()->withQueryString();
 
         return new MessageCollection($messages);
     }

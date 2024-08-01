@@ -28,8 +28,8 @@ class Tool extends Model
         'id' => 'integer',
     ];
 
-    public function app\Models\Users(): BelongsToMany
+    public function users(): BelongsToMany
     {
-        return $this->belongsToMany(App\Models\User::class);
+        return $this->belongsToMany(User::class);
     }
 }
